@@ -50,7 +50,7 @@ $(window).on('load', function() {
 		mouseDrag: false,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
-		items: 1,
+		items: 1,	
 		//autoplay: true,
 		autoplayTimeout: 10000,
 	});

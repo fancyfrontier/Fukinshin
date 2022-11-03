@@ -382,7 +382,7 @@ ol {
 	height: 20px;
 	right: 0;
 	top: 1px;
-	background-image: url("../img/icons/arrow-down.png");
+	/* background-image: url("../img/icons/arrow-down.png"); */
 	background-repeat: no-repeat;
 	background-position: right center;
 }
@@ -397,7 +397,7 @@ ol {
 }
 
 .main-menu li a:hover:after {
-	background-image: url("../img/icons/arrow-down-color.png");
+	/* background-image: url("../img/icons/arrow-down-color.png"); */
 }
 
 .main-menu li a:hover i {
@@ -415,7 +415,7 @@ ol {
 }
 
 .main-menu li:hover>a:after {
-	background-image: url("../img/icons/arrow-down-color.png");
+	/* background-image: url("../img/icons/arrow-down-color.png"); */
 }
 
 .main-menu li .sub-menu {
@@ -521,16 +521,18 @@ ol {
 .hero-item {
 	height: 921px;
 	padding-top: 125px;
-	border-bottom: 2px solid #b01ba5;
+	border-bottom: 2px solid #ffffff;
+	/* border-bottom: 2px solid #b01ba5; */
 }
 
 .hero-item h2 {
-	font-size: 160px;
+	font-size: 80px;
 	color: #fff;
 	font-weight: 500;
 	line-height: 1;
 	position: relative;
-	top: 100px;
+	/* top: 100px; */
+	right: 100px;
 	opacity: 0;
 }
 
@@ -554,14 +556,16 @@ ol {
 .hero-slider .owl-item.active .hero-item h2,
 .hero-slider .owl-item.active .hero-item p,
 .hero-slider .owl-item.active .hero-item .site-btn {
-	top: 0;
+	/* top: 0; */
 	opacity: 1;
+	right: 0;
 }
 
 .hero-slider .owl-item.active .hero-item h2 {
-	-webkit-transition: all 0.5s ease 0.4s;
-	-o-transition: all 0.5s ease 0.4s;
-	transition: all 0.5s ease 0.4s;
+	/* -webkit-transition: all 0.5s ease 0.4s; */
+	/* -o-transition: all 0.5s ease 0.4s; */
+	transition: all 1.5s ease 1.4s;
+	/* transition: all 0.5s ease 0.4s; */
 }
 
 .hero-slider .owl-item.active .hero-item p {
