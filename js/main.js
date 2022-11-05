@@ -10,12 +10,25 @@
 
 
 $(window).on('load', function() {
+	
 	/*------------------
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
 
+	/*------------------
+		Header,Footer
+	--------------------*/
+	$(".headerpage").load("header.html");
+	$(".footer").load("footer.html");
+	$(".feature").load("feature.html");
+
+	/*------------------
+		Language
+	--------------------*/
+	// var classList = $("#header").attr("class");
+	// alert(classList);
 });
 
 (function($) {
