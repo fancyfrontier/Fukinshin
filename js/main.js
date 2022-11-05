@@ -23,12 +23,7 @@ $(window).on('load', function() {
 	$(".headerpage").load("header.html");
 	$(".footer").load("footer.html");
 	$(".feature").load("feature.html");
-
-	/*------------------
-		Language
-	--------------------*/
-	// var classList = $("#header").attr("class");
-	// alert(classList);
+	
 });
 
 (function($) {
@@ -49,7 +44,6 @@ $(window).on('load', function() {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
-
 
 
 	/*------------------
@@ -79,7 +73,6 @@ $(window).on('load', function() {
 	});
 
 
-
 	/*------------------
 		Video Popup
 	--------------------*/
@@ -92,5 +85,25 @@ $(window).on('load', function() {
 	    bottomSpacing: 60
 	});
 
+
+	/*------------------
+		Language
+	--------------------*/
+	$("#TCheader").hide();
+	$("#SCheader").hide();
+	$("#JPheader").hide();
+
+	if(getCookie("lan") == "fc"){
+		$("#TCheader").show();
+
+	}else if(getCookie("lan") == "sc"){
+		$("#SCheader").show();
+
+	}else if(getCookie("lan") == "jp"){
+		$("#JPheader").show();
+
+	}else{
+
+	}
 
 })(jQuery);
