@@ -18,22 +18,42 @@ $(window).on('load', function() {
 	$("#preloder").delay(400).fadeOut("slow");
 
 	/*------------------
-		Header,Footer,Language
+		Header,Footer
 	--------------------*/
 	$(".footer").load("footer.html");
 	$(".feature").load("feature.html");
 
+	/*------------------
+		Language
+	--------------------*/
+	
+	//Init
+	$("#mainTextFC").hide();
+	$("#mainTextSC").hide();
+	$("#introTextFC").hide();
+	$("#introTextSC").hide();
+	
+
 	if(getCookie("lan") == "fc"){
-		$("#chooseHeader").append("<div class=" + '"headerpageFC"' + "></div>")
-		
+		$("#chooseHeader").append("<div class=" + '"headerpageFC"' + "></div>");
+		$("#mainTextFC").show();
+		$("#introTextFC").show();
+		// $("#featureTextFC").show();
+
 	}else if(getCookie("lan") == "sc"){
 		$("#chooseHeader").append("<div class=" + '"headerpageSC"' + "></div>");
+		$("#mainTextSC").show();
+		$("#introTextSC").show();
+		// $("#featureTextSC").show();
 		
 	}else if(getCookie("lan") == "jp"){
 		$("#chooseHeader").append("<div class=" + '"headerpageJP"' + "></div>");
-		
+
 	}else{
 		$("#chooseHeader").append("<div class=" + '"headerpageFC"' + "></div>");
+		$("#mainTextFC").show();
+		$("#introTextFC").show();
+		// $("#featureTextFC").show();
 	}
 	
 	$(".headerpageFC").load("headerFC.html");
@@ -101,5 +121,27 @@ $(window).on('load', function() {
 	    topSpacing: 60,
 	    bottomSpacing: 60
 	});
+
+	
+	/*------------------
+		Language Section
+	--------------------*/
+	$("#featureTextFC").hide();
+	$("#featureTextSC").hide();
+
+	if(getCookie("lan") == "fc"){
+		$("#featureTextFC").show();
+
+	}else if(getCookie("lan") == "sc"){
+		$("#featureTextSC").show();
+		
+	}else if(getCookie("lan") == "jp"){
+
+	}else{
+		$("#featureTextFC").show();
+	}
+
+
+
 
 })(jQuery);
