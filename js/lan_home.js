@@ -5,35 +5,11 @@ $(window).on('load', function() {
     $(".HOME_news").load("Section/Home/home_news.html");
     $(".COMMON_feature").load("Section/Common/common_feature.html");
 
-    // $("#home_mainTextFC").hide();
-	// $("#home_mainTextSC").hide();
-	// $("#home_introTextFC").hide();
-	// $("#home_introTextSC").hide();
-    // $("#featureTextFC").hide();
-	// $("#featureTextSC").hide();
-
-	// if(getCookie("lan") == "fc"){
-	// 	$("#home_mainTextFC").show();
-	// 	$("#home_introTextFC").show();
-    //     $("#featureTextFC").show();
-
-	// }else if(getCookie("lan") == "sc"){
-	// 	$("#home_mainTextSC").show();
-	// 	$("#home_introTextSC").show();
-    //     $("#featureTextSC").show();
-		
-	// }else if(getCookie("lan") == "jp"){
-
-	// }else{
-	// 	$("#home_mainTextFC").show();
-	// 	$("#home_introTextFC").show();
-    //     $("#featureTextFC").show();
-	// }
-
 });
 
+(function($) {
 
-/*------------------
+    /*------------------
 		Language
 	--------------------*/
 	$("#home_mainTextFC").hide();
@@ -65,12 +41,7 @@ $(window).on('load', function() {
 		$("#home_introTextFC").show();
 		$("#home_newsTextFC").show();
 	}
-
-(function($) {
-
-
     
-
 })(jQuery);
 
 
