@@ -33,10 +33,10 @@ $(window).on('load', function() {
 		$("#chooseHeader").append("<div class=" + '"headerpageFC"' + "></div>");
 	}
 	
-	$(".headerpageFC").load("headerFC.html");
-	$(".headerpageSC").load("headerSC.html");
-	$(".headerpageJP").load("headerJP.html");
-	$(".footer").load("footer.html");
+	$(".headerpageFC").load("Section/Common/common_headerFC.html");
+	$(".headerpageSC").load("Section/Common/common_headerSC.html");
+	$(".headerpageJP").load("Section/Common/common_headerJP.html");
+	$(".footer").load("Section/Common/common_footer.html");
 
 });
 

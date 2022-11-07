@@ -915,7 +915,8 @@ ol {
 
 .video-text p {
 	font-size: 18px;
-	color: #a3a1b3;
+	/* color: #a3a1b3; */
+	color: #4a4a4a;
 	font-weight: 500;
 	margin-bottom: 0;
 }

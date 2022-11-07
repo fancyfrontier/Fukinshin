@@ -5,6 +5,24 @@ $(window).on('load', function() {
     $(".HOME_news").load("Section/Home/home_news.html");
     $(".COMMON_feature").load("Section/Common/common_feature.html");
 
+	/*------------------
+		Video
+	--------------------*/
+	if(getCookie("lan") == "fc"){
+		$("#HOME_video").append("<div class=" + '"home_videoFC"' + "></div>");
+
+	}else if(getCookie("lan") == "sc"){
+		$("#HOME_video").append("<div class=" + '"home_videoSC"' + "></div>");
+		
+	}else if(getCookie("lan") == "jp"){
+
+	}else{
+		$("#HOME_video").append("<div class=" + '"home_videoFC"' + "></div>");
+	}
+
+	$(".home_videoFC").load("Section/Home/home_videoFC.html");
+	$(".home_videoSC").load("Section/Home/home_videoSC.html");
+
 });
 
 (function($) {
@@ -32,7 +50,7 @@ $(window).on('load', function() {
 		$("#featureTextSC").show();
 		$("#home_introTextSC").show();
 		$("#home_newsTextSC").show();
-		
+
 	}else if(getCookie("lan") == "jp"){
 
 	}else{
