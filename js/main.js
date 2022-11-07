@@ -18,42 +18,28 @@ $(window).on('load', function() {
 	$("#preloder").delay(400).fadeOut("slow");
 
 	/*------------------
-		Header,Footer
+		Header,Footer,common
 	--------------------*/
 	$(".footer").load("footer.html");
-	$(".feature").load("feature.html");
 
-	/*------------------
-		Language
-	--------------------*/
-	
-	//Init
-	$("#mainTextFC").hide();
-	$("#mainTextSC").hide();
-	$("#introTextFC").hide();
-	$("#introTextSC").hide();
-	
 
+	$(".HOME_mainText").load("Section/Home/home_mainText.html");
+    $(".HOME_intro").load("Section/Home/home_intro.html");
+    $(".HOME_news").load("Section/Home/home_news.html");
+    $(".COMMON_feature").load("Section/Common/common_feature.html");
+
+		
 	if(getCookie("lan") == "fc"){
 		$("#chooseHeader").append("<div class=" + '"headerpageFC"' + "></div>");
-		$("#mainTextFC").show();
-		$("#introTextFC").show();
-		// $("#featureTextFC").show();
 
 	}else if(getCookie("lan") == "sc"){
 		$("#chooseHeader").append("<div class=" + '"headerpageSC"' + "></div>");
-		$("#mainTextSC").show();
-		$("#introTextSC").show();
-		// $("#featureTextSC").show();
 		
 	}else if(getCookie("lan") == "jp"){
 		$("#chooseHeader").append("<div class=" + '"headerpageJP"' + "></div>");
 
 	}else{
 		$("#chooseHeader").append("<div class=" + '"headerpageFC"' + "></div>");
-		$("#mainTextFC").show();
-		$("#introTextFC").show();
-		// $("#featureTextFC").show();
 	}
 	
 	$(".headerpageFC").load("headerFC.html");
@@ -124,21 +110,36 @@ $(window).on('load', function() {
 
 	
 	/*------------------
-		Language Section
+		Language
 	--------------------*/
+	$("#home_mainTextFC").hide();
+	$("#home_mainTextSC").hide();
 	$("#featureTextFC").hide();
 	$("#featureTextSC").hide();
+	$("#home_introTextFC").hide();
+	$("#home_introTextSC").hide();
+	$("#home_newsTextFC").hide();
+	$("#home_newsTextSC").hide();
 
 	if(getCookie("lan") == "fc"){
+		$("#home_mainTextFC").show();
 		$("#featureTextFC").show();
+		$("#home_introTextFC").show();
+		$("#home_newsTextFC").show();
 
 	}else if(getCookie("lan") == "sc"){
+		$("#home_mainTextSC").show();
 		$("#featureTextSC").show();
+		$("#home_introTextSC").show();
+		$("#home_newsTextSC").show();
 		
 	}else if(getCookie("lan") == "jp"){
 
 	}else{
+		$("#home_mainTextFC").show();
 		$("#featureTextFC").show();
+		$("#home_introTextFC").show();
+		$("#home_newsTextFC").show();
 	}
 
 
