@@ -33,10 +33,10 @@ $(window).on('load', function() {
 		$("#chooseHeader").append("<div class=" + '"headerpageFC"' + "></div>");
 	}
 	
-	$(".headerpageFC").load("Section/Common/common_headerFC.html");
-	$(".headerpageSC").load("Section/Common/common_headerSC.html");
-	$(".headerpageJP").load("Section/Common/common_headerJP.html");
-	$(".footer").load("Section/Common/common_footer.html");
+	$(".headerpageFC").load("../Section/Common/common_headerFC.html");
+	$(".headerpageSC").load("../Section/Common/common_headerSC.html");
+	$(".headerpageJP").load("../Section/Common/common_headerJP.html");
+	$(".footer").load("../Section/Common/common_footer.html");
 
 });
 
@@ -67,7 +67,7 @@ $(window).on('load', function() {
 		loop: true,
 		nav: true,
 		dots: true,
-		navText: ['', '<img src="img/icons/solid-right-arrow.png">'],
+		navText: ['', '<img src="../img/icons/solid-right-arrow.png">'],
 		mouseDrag: false,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
@@ -94,9 +94,9 @@ $(window).on('load', function() {
   		type: 'iframe'
 	});
 
-	$('#stickySidebar').stickySidebar({
-	    topSpacing: 60,
-	    bottomSpacing: 60
-	});
+	// $('#stickySidebar').stickySidebar({
+	//     topSpacing: 60,
+	//     bottomSpacing: 60
+	// });
 
 })(jQuery);

@@ -1,7 +1,7 @@
 $(window).on('load', function() {
 
-	$(".TEAM_top").load("Section/Team/team_top.html");
-    $(".TEAM_intro").load("Section/Team/team_intro.html");
+	$(".TEAM_top").load("../Section/Team/team_top.html");
+    $(".TEAM_intro").load("../Section/Team/team_intro.html");
 });
 
 (function($) {

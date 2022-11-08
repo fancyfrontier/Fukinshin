@@ -1,9 +1,9 @@
 $(window).on('load', function() {
 
-	$(".HOME_mainText").load("Section/Home/home_mainText.html");
-    $(".HOME_intro").load("Section/Home/home_intro.html");
-    $(".HOME_news").load("Section/Home/home_news.html");
-    $(".COMMON_feature").load("Section/Common/common_feature.html");
+	$(".HOME_mainText").load("../Section/Home/home_mainText.html");
+    $(".HOME_intro").load("../Section/Home/home_intro.html");
+    $(".HOME_news").load("../Section/Home/home_news.html");
+    $(".COMMON_feature").load("../Section/Common/common_feature.html");
 
 	/*------------------
 		Video
@@ -20,8 +20,8 @@ $(window).on('load', function() {
 		$("#HOME_video").append("<div class=" + '"home_videoFC"' + "></div>");
 	}
 
-	$(".home_videoFC").load("Section/Home/home_videoFC.html");
-	$(".home_videoSC").load("Section/Home/home_videoSC.html");
+	$(".home_videoFC").load("../Section/Home/home_videoFC.html");
+	$(".home_videoSC").load("../Section/Home/home_videoSC.html");
 });
 
 (function($) {

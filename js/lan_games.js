@@ -1,8 +1,8 @@
 $(window).on('load', function() {
 
-	$(".GAMES_top").load("Section/Games/games_top.html");
-    $(".GAMES_list").load("Section/Games/games_list.html");
-    $(".COMMON_feature").load("Section/Common/common_feature.html");
+	$(".GAMES_top").load("../Section/Games/games_top.html");
+    $(".GAMES_list").load("../Section/Games/games_list.html");
+    $(".COMMON_feature").load("../Section/Common/common_feature.html");
 });
 
 (function($) {
