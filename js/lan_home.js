@@ -22,7 +22,6 @@ $(window).on('load', function() {
 
 	$(".home_videoFC").load("Section/Home/home_videoFC.html");
 	$(".home_videoSC").load("Section/Home/home_videoSC.html");
-
 });
 
 (function($) {
