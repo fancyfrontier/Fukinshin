@@ -5,6 +5,9 @@
  ------------------------------------
  ====================================*/
 
+ 	/*------------------
+		Language Set
+	--------------------*/
 	$('.FcBtn').click(function(){
 		setCookie("lan", "fc", 3)
 		location.reload();
@@ -19,6 +22,13 @@
 		setCookie("lan", "jp", 3)
 		location.reload();
 	});
+
+
+	/*------------------
+		Story Set
+	--------------------*/
+	
+
 
 	function setCookie(cname, cvalue, exdays) {
 		const d = new Date();
