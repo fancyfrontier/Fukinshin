@@ -50,7 +50,6 @@ $(window).on('load', function() {
 		openedSymbol: '<i class="fa fa-angle-up"></i>'
 	});
 
-
 	/*------------------
 		Background Set
 	--------------------*/
@@ -58,7 +57,6 @@ $(window).on('load', function() {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
-
 
 	/*------------------
 		Hero Slider
@@ -86,7 +84,6 @@ $(window).on('load', function() {
 		}
 	});
 
-
 	/*------------------
 		Video Popup
 	--------------------*/
@@ -99,4 +96,76 @@ $(window).on('load', function() {
 	//     bottomSpacing: 60
 	// });
 
+	/*------------------
+		Language
+	--------------------*/
+	$('.FcBtn').click(function(){
+		setCookie("lan", "fc", 3)
+		location.reload();
+	});
+	
+	$('.ScBtn').click(function(){
+		setCookie("lan", "sc", 3)
+		location.reload();
+	});
+	
+	$('.JpBtn').click(function(){
+		setCookie("lan", "jp", 3)
+		location.reload();
+	});
+
+	/*------------------
+		Story Set
+	--------------------*/
+	$('.story_Sunday').click(function(){
+		setCookie("story", "Sunday", 3)
+		window.location.href = "../../Main/story.html";
+	});
+
+	$('.story_Tatari').click(function(){
+		setCookie("story", "Tatari", 3)
+		window.location.href = "../../Main/story.html";
+	});
+
+	$('.story_Tatari_Chp1').click(function(){
+		setCookie("story", "Tatari_Chp1", 3)
+		window.location.href = "../../Main/story.html";
+	});
+
+	$('.story_Star').click(function(){
+		setCookie("story", "Star", 3)
+		window.location.href = "../../Main/story.html";
+	});
+
+	
+
+
 })(jQuery);
+
+
+	/*------------------
+		Tool
+	--------------------*/
+
+	function setCookie(cname, cvalue, exdays) {
+		const d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		let expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function getCookie(cname) {
+		let name = cname + "=";
+		let decodedCookie = decodeURIComponent(document.cookie);
+		let ca = decodedCookie.split(';');
+		for(let i = 0; i <ca.length; i++) {
+		let c = ca[i];
+		while (c.charAt(0) == ' ') {
+			c = c.substring(1);
+		}
+		if (c.indexOf(name) == 0) {
+			return c.substring(name.length, c.length);
+		}
+		}
+		return "";
+	}

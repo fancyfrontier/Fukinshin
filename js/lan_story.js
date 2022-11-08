@@ -1,8 +1,26 @@
 $(window).on('load', function() {
 
-	$(".STORY_top").load("../Section/Story/Story_Sunday/story_top.html");
-    $(".STORY_content").load("../Section/Story/Story_Sunday/story_content.html");
-	$(".STORY_author").load("../Section/Story/Story_Sunday/story_author.html");
+	if(getCookie("story") == "Sunday"){
+		$(".STORY_top").load("../Section/Story/Story_Sunday/story_top.html");
+		$(".STORY_content").load("../Section/Story/Story_Sunday/story_content.html");
+		$(".STORY_author").load("../Section/Story/Story_Sunday/story_author.html");
+
+	}else if(getCookie("story") == "Tatari"){
+	$(".STORY_top").load("../Section/Story/Story_Tatari/story_top.html");
+		$(".STORY_content").load("../Section/Story/Story_Tatari/story_content.html");
+		$(".STORY_author").load("../Section/Story/Story_Tatari/story_author.html");
+
+	}else if(getCookie("story") == "Tatari_Chp1"){
+		$(".STORY_top").load("../Section/Story/Story_Tatari_Chp1/story_top.html");
+		$(".STORY_content").load("../Section/Story/Story_Tatari_Chp1/story_content.html");
+		$(".STORY_author").load("../Section/Story/Story_Tatari_Chp1/story_author.html");
+
+	}else if(getCookie("story") == "Star"){
+		$(".STORY_top").load("../Section/Story/Story_Star/story_top.html");
+		$(".STORY_content").load("../Section/Story/Story_Star/story_content.html");
+		$(".STORY_author").load("../Section/Story/Story_Star/story_author.html");
+	}
+	
 });
 
 (function($) {
