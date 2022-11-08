@@ -6,7 +6,7 @@ $(window).on('load', function() {
 		$(".STORY_author").load("../Section/Story/Story_Sunday/story_author.html");
 
 	}else if(getCookie("story") == "Tatari"){
-	$(".STORY_top").load("../Section/Story/Story_Tatari/story_top.html");
+		$(".STORY_top").load("../Section/Story/Story_Tatari/story_top.html");
 		$(".STORY_content").load("../Section/Story/Story_Tatari/story_content.html");
 		$(".STORY_author").load("../Section/Story/Story_Tatari/story_author.html");
 

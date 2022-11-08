@@ -100,16 +100,19 @@ $(window).on('load', function() {
 		Language
 	--------------------*/
 	$('.FcBtn').click(function(){
+		clearCookie("lan");
 		setCookie("lan", "fc", 3)
 		location.reload();
 	});
 	
 	$('.ScBtn').click(function(){
+		clearCookie("lan");
 		setCookie("lan", "sc", 3)
 		location.reload();
 	});
 	
 	$('.JpBtn').click(function(){
+		clearCookie("lan");
 		setCookie("lan", "jp", 3)
 		location.reload();
 	});
@@ -118,21 +121,25 @@ $(window).on('load', function() {
 		Story Set
 	--------------------*/
 	$('.story_Sunday').click(function(){
+		clearCookie("story");
 		setCookie("story", "Sunday", 3)
 		window.location.href = "../../Main/story.html";
 	});
 
 	$('.story_Tatari').click(function(){
+		clearCookie("story");
 		setCookie("story", "Tatari", 3)
 		window.location.href = "../../Main/story.html";
 	});
 
 	$('.story_Tatari_Chp1').click(function(){
+		clearCookie("story");
 		setCookie("story", "Tatari_Chp1", 3)
 		window.location.href = "../../Main/story.html";
 	});
 
 	$('.story_Star').click(function(){
+		clearCookie("story");
 		setCookie("story", "Star", 3)
 		window.location.href = "../../Main/story.html";
 	});
@@ -146,7 +153,6 @@ $(window).on('load', function() {
 	/*------------------
 		Tool
 	--------------------*/
-
 	function setCookie(cname, cvalue, exdays) {
 		const d = new Date();
 		d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -169,3 +175,7 @@ $(window).on('load', function() {
 		}
 		return "";
 	}
+
+	function clearCookie(name) {  
+		setCookie(name, "", -1);  
+	}  
