@@ -165,6 +165,31 @@ $(window).on('load', function() {
 		window.location.href = "../../Main/storyIntro.html";
 	});
 
+	/*------------------
+		OutSite Set
+	--------------------*/
+	$('.facebook').click(function(){
+		window.open("https://www.facebook.com/profile.php?id=100063828969552")
+	});
+	$('.twitter').click(function(){
+		window.open("https://twitter.com/tappu0901")
+	});
+
+	/*------------------
+		Download Set
+	--------------------*/
+	$('.download_Star').click(function(){
+		window.open("https://drive.google.com/file/d/1eBlh4JZTDW3OtYJlbOZsVmHdXjb_isrc/view?usp=share_link")
+	});
+	$('.download_Sunday').click(function(){
+		window.open("https://drive.google.com/file/d/1XpX6dK7WC_YVQFm5QR6zU39IuVHREaBF/view")
+	});
+	$('.download_Tatari').click(function(){
+		window.open("https://drive.google.com/file/d/1YemdcoUKjrR3xsw-WlaEf6f7w04Rip1Q/view?usp=share_link")
+	});
+	$('.download_Tatari_Chp1').click(function(){
+		window.open("https://drive.google.com/file/d/1YbvYN2zynN8IC7X5KGuTUEM6CwNEJEn_/view?usp=share_link")
+	});
 
 })(jQuery);
 

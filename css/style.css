@@ -744,8 +744,8 @@ ol {
 .widget-item .widget-title {
 	color: #fff;
 	text-transform: uppercase;
-	font-weight: 700;
-	font-style: italic;
+	/* font-weight: 700; */
+	font-style: inherit;
 	padding-left: 38px;
 	margin-bottom: 48px;
 }
@@ -1338,7 +1338,7 @@ ol {
 .game-single-content p {
 	font-size: 16px;
 	font-weight: 500;
-	color: #68647d;
+	color: #434152;
 	line-height: 1.8;
 	margin-bottom: 70px;
 }
@@ -1357,7 +1357,7 @@ ol {
 .rating-widget ul li {
 	display: block;
 	font-size: 16px;
-	color: #b01ba5;
+	color: #f726e9;
 	font-weight: 500;
 	margin-bottom: 10px;
 }
