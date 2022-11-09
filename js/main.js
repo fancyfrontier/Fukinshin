@@ -144,7 +144,26 @@ $(window).on('load', function() {
 		window.location.href = "../../Main/story.html";
 	});
 
-	
+	/*------------------
+		Intro Set
+	--------------------*/
+	$('.intro_Sunday').click(function(){
+		clearCookie("intro");
+		setCookie("intro", "Sunday", 3)
+		window.location.href = "../../Main/storyIntro.html";
+	});
+
+	$('.intro_Tatari').click(function(){
+		clearCookie("intro");
+		setCookie("intro", "Tatari", 3)
+		window.location.href = "../../Main/storyIntro.html";
+	});
+
+	$('.intro_Star').click(function(){
+		clearCookie("intro");
+		setCookie("intro", "Star", 3)
+		window.location.href = "../../Main/storyIntro.html";
+	});
 
 
 })(jQuery);
