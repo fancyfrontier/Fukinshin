@@ -176,6 +176,13 @@ $(window).on('load', function() {
 	});
 
 	/*------------------
+		Back Set
+	--------------------*/
+	$('.toStoryIntroList').click(function(){
+		window.location.href = "../../Main/storyIntroList.html";
+	});
+
+	/*------------------
 		Download Set
 	--------------------*/
 	$('.download_Star').click(function(){
