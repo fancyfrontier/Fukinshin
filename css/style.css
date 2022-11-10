@@ -1294,7 +1294,8 @@ ol {
 .review-section,
 .blog-page,
 .contact-page {
-	padding: 104px 0;
+	padding: 30px 0;
+	/* padding: 104px 0; */
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#501755+0,2d1854+100 */
 	/* background: #6e6e6e; */
 	background: #f0f0f0;
@@ -1340,7 +1341,7 @@ ol {
 	font-weight: 500;
 	color: #434152;
 	line-height: 1.8;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 
 .rating-widget {
@@ -1495,7 +1496,8 @@ ol {
 }
 
 .review-content .rating h5 span {
-	color: #c313b7;
+	color: #37334a;
+	/* color: #c313b7; */
 }
 
 /* ------------------
