@@ -129,22 +129,22 @@ $(window).on('load', function() {
 	$('.story_Tatari').click(function(){
 		clearCookie("story");
 		clearCookie("chp_Tatari");
-		setCookie("story", "Tatari", 3)
-		setCookie("chp_Tatari", "chp", 3)
+		setCookie("story", "Tatari", 3);
+		setCookie("chp_Tatari", "chp", 3);
 		window.location.href = "../../Main/story.html";
 	});
 
 	$('.story_Tatari_Chp1').click(function(){
 		clearCookie("story");
 		clearCookie("chp_Tatari");
-		setCookie("story", "Tatari", 3)
-		setCookie("chp_Tatari", "chp1", 3)
+		setCookie("story", "Tatari", 3);
+		setCookie("chp_Tatari", "chp1", 3);
 		window.location.href = "../../Main/story.html";
 	});
 
 	$('.story_Star').click(function(){
 		clearCookie("story");
-		setCookie("story", "Star", 3)
+		setCookie("story", "Star", 3);
 		window.location.href = "../../Main/story.html";
 	});
 
@@ -153,20 +153,21 @@ $(window).on('load', function() {
 	--------------------*/
 	$('.intro_Sunday').click(function(){
 		clearCookie("intro");
-		setCookie("intro", "Sunday", 3)
+		setCookie("intro", "Sunday", 3);
 		window.location.href = "../../Main/storyIntro.html";
 	});
 
 	$('.intro_Tatari').click(function(){
 		clearCookie("intro");
 		clearCookie("chp_Tatari");
-		setCookie("intro", "Tatari", 3)
+		setCookie("intro", "Tatari", 3);
+		setCookie("chp_Tatari", "chp", 3)
 		window.location.href = "../../Main/storyIntro.html";
 	});
 
 	$('.intro_Star').click(function(){
 		clearCookie("intro");
-		setCookie("intro", "Star", 3)
+		setCookie("intro", "Star", 3);
 		window.location.href = "../../Main/storyIntro.html";
 	});
 

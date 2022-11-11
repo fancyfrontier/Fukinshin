@@ -8,13 +8,14 @@ $(window).on('load', function() {
 	}else if(getCookie("intro") == "Tatari"){
 		$(".STORY_INTRO_top").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_top.html");
 		$(".STORY_INTRO_chpList").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_chpList.html");
-    	$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro.html");
 		$(".STORY_INTRO_content_main").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_main.html");
 
 		if(getCookie("chp_Tatari") == "chp"){
+			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_chp.html");
 			$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_chp.html");
 
 		}else if(getCookie("chp_Tatari") == "chp1"){
+			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_chp1.html");
 			$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_chp1.html");
 
 		}else{
