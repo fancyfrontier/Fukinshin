@@ -34,7 +34,7 @@ $(window).on('load', function() {
 		$("#storyList_listTextFC").show();
 		$("#storyList_topTextFC").show();
 	}
-    
+
 })(jQuery);
 
 

@@ -7,8 +7,18 @@ $(window).on('load', function() {
 
 	}else if(getCookie("story") == "Tatari"){
 		$(".STORY_top").load("../Section/Story/Story_Tatari/story_top.html");
-		$(".STORY_content").load("../Section/Story/Story_Tatari/story_content.html");
+		$(".STORY_INTRO_chpList").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_chpList.html");
 		$(".STORY_author").load("../Section/Story/Story_Tatari/story_author.html");
+
+		if(getCookie("chp_Tatari") == "chp"){
+			$(".STORY_content").load("../Section/Story/Story_Tatari/story_content_chp.html");
+
+		}else if(getCookie("chp_Tatari") == "chp1"){
+			$(".STORY_content").load("../Section/Story/Story_Tatari/story_content_chp1.html");
+
+		}else{
+			$(".STORY_content").load("../Section/Story/Story_Tatari/story_content_chp.html");
+		}
 
 	}else if(getCookie("story") == "Tatari_Chp1"){
 		$(".STORY_top").load("../Section/Story/Story_Tatari_Chp1/story_top.html");

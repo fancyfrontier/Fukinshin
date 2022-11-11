@@ -128,13 +128,17 @@ $(window).on('load', function() {
 
 	$('.story_Tatari').click(function(){
 		clearCookie("story");
+		clearCookie("chp_Tatari");
 		setCookie("story", "Tatari", 3)
+		setCookie("chp_Tatari", "chp", 3)
 		window.location.href = "../../Main/story.html";
 	});
 
 	$('.story_Tatari_Chp1').click(function(){
 		clearCookie("story");
-		setCookie("story", "Tatari_Chp1", 3)
+		clearCookie("chp_Tatari");
+		setCookie("story", "Tatari", 3)
+		setCookie("chp_Tatari", "chp1", 3)
 		window.location.href = "../../Main/story.html";
 	});
 
@@ -155,6 +159,7 @@ $(window).on('load', function() {
 
 	$('.intro_Tatari').click(function(){
 		clearCookie("intro");
+		clearCookie("chp_Tatari");
 		setCookie("intro", "Tatari", 3)
 		window.location.href = "../../Main/storyIntro.html";
 	});
@@ -181,6 +186,9 @@ $(window).on('load', function() {
 	$('.toStoryIntroList').click(function(){
 		window.location.href = "../../Main/storyIntroList.html";
 	});
+	$('.toStoryList').click(function(){
+		window.location.href = "../../Main/storyList.html";
+	});
 
 	/*------------------
 		Download Set
@@ -197,6 +205,8 @@ $(window).on('load', function() {
 	$('.download_Tatari_Chp1').click(function(){
 		window.open("https://drive.google.com/file/d/1YbvYN2zynN8IC7X5KGuTUEM6CwNEJEn_/view?usp=share_link")
 	});
+
+	
 
 })(jQuery);
 

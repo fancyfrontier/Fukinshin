@@ -74,7 +74,7 @@ $(window).on('load', function() {
 		$("#storyIntro_contentMainTextFC").show();
 		$("#storyIntro_contentOtherTextFC").show();
 	}
-    
+
 	/*------------------
 		Chapter Set
 	--------------------*/
