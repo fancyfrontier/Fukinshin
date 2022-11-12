@@ -118,6 +118,19 @@ $(window).on('load', function() {
 	});
 
 	/*------------------
+		Diary
+	--------------------*/
+	$('.Diary_TC').click(function(){
+		window.location.href = "../../Diary/TC/TcDiary.html";
+	});
+	$('.Diary_SC').click(function(){
+		window.location.href = "../../Diary/SC/ScDiary.html";
+	});
+	$('.Diary_JC').click(function(){
+		window.location.href = "../../Diary/JP/JpDiary.html";
+	});
+
+	/*------------------
 		Story Set
 	--------------------*/
 	$('.story_Sunday').click(function(){

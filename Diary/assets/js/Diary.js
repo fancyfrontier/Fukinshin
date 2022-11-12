@@ -46,7 +46,7 @@ $(document).ready(function () {
     $("#TC_Home").on({
         mouseenter: function () { $(this).html("首頁") },
         mouseleave: function () { $(this).html("ホーム") },
-        click: function () { $(window).attr('location', 'TcDiary.html'); }
+        click: function () { $(window).attr('location', '../../Main/index.html'); }
     });
     $("#TC_Index").on({
         mouseenter: function () { $(this).css("color", "red"); },
@@ -67,7 +67,7 @@ $(document).ready(function () {
     $("#SC_Home").on({
         mouseenter: function () { $(this).html("首页") },
         mouseleave: function () { $(this).html("ホーム") },
-        click: function () { $(window).attr('location', 'ScDiary.html'); }
+        click: function () { $(window).attr('location', '../../Main/index.html'); }
     });
     $("#SC_Index").on({
         mouseenter: function () { $(this).css("color", "red"); },
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
     //JP_Version
     $("#JP_Home").on({
-        click: function () { $(window).attr('location', 'JpDiary.html'); }
+        click: function () { $(window).attr('location', '../../Main/index.html'); }
     });
     $("#JP_Index").on({
         mouseenter: function () { $(this).css("color", "red"); },
