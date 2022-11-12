@@ -9,8 +9,11 @@ $(window).on('load', function() {
 		$(".STORY_INTRO_top").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_top.html");
 		$(".STORY_INTRO_chpList").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_chpList.html");
 		$(".STORY_INTRO_content_main").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_main.html");
+		
+		if(getCookie("chp_Tatari") == "all"){
+			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_all.html");
 
-		if(getCookie("chp_Tatari") == "chp"){
+		}else if(getCookie("chp_Tatari") == "chp"){
 			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_chp.html");
 			$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_chp.html");
 
@@ -79,6 +82,12 @@ $(window).on('load', function() {
 	/*------------------
 		Chapter Set
 	--------------------*/
+	$('.chp_Tatari_All').click(function(){
+		clearCookie("chp_Tatari");
+		setCookie("chp_Tatari", "all", 3)
+		location.reload();
+	});
+
 	$('.chp_Tatari').click(function(){
 		clearCookie("chp_Tatari");
 		setCookie("chp_Tatari", "chp", 3)

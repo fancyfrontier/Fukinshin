@@ -161,7 +161,7 @@ $(window).on('load', function() {
 		clearCookie("intro");
 		clearCookie("chp_Tatari");
 		setCookie("intro", "Tatari", 3);
-		setCookie("chp_Tatari", "chp", 3)
+		setCookie("chp_Tatari", "all", 3)
 		window.location.href = "../../Main/storyIntro.html";
 	});
 

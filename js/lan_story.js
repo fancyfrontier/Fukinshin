@@ -7,7 +7,7 @@ $(window).on('load', function() {
 
 	}else if(getCookie("story") == "Tatari"){
 		$(".STORY_top").load("../Section/Story/Story_Tatari/story_top.html");
-		$(".STORY_INTRO_chpList").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_chpList.html");
+		$(".STORY_INTRO_chpList").load("../Section/Story/Story_Tatari/story_chpList.html");
 		$(".STORY_author").load("../Section/Story/Story_Tatari/story_author.html");
 
 		if(getCookie("chp_Tatari") == "chp"){
@@ -44,13 +44,17 @@ $(window).on('load', function() {
 	$("#story_contentTextSC").hide();
 	$("#story_authorTextFC").hide();
 	$("#story_authorTextSC").hide();
+	$("#story_chpListTextFC").hide();
+	$("#story_chpListTextSC").hide();
 
 	if(getCookie("lan") == "fc"){
+		$("#story_chpListTextFC").show();
 		$("#story_contentTextFC").show();
 		$("#story_topTextFC").show();
 		$("#story_authorTextFC").show();
 
 	}else if(getCookie("lan") == "sc"){
+		$("#story_chpListTextSC").show();
 		$("#story_contentTextSC").show();
 		$("#story_topTextSC").show();
 		$("#story_authorTextSC").show();
@@ -58,6 +62,7 @@ $(window).on('load', function() {
 	}else if(getCookie("lan") == "jp"){
 
 	}else{
+		$("#story_chpListTextFC").show();
 		$("#story_contentTextFC").show();
 		$("#story_topTextFC").show();
 		$("#story_authorTextFC").show();
