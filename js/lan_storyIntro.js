@@ -9,10 +9,10 @@ $(window).on('load', function() {
 	}else if(getCookie("intro") == "Tatari"){
 		$(".STORY_INTRO_top").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_top.html");
 		$(".STORY_INTRO_chpList").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_chpList.html");
-		$(".STORY_INTRO_content_main").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_main.html");
 		
 		if(getCookie("chp_Tatari") == "all"){
 			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_all.html");
+			$(".STORY_INTRO_content_main").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_main.html");
 
 		}else if(getCookie("chp_Tatari") == "chp"){
 			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_chp.html");

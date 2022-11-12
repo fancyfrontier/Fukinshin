@@ -16,41 +16,77 @@ $(window).on('load', function() {
 
 (function($) {
 	
-	var story = "";
 
-	if(getCookie("intro") == "Sunday"){
-		story = "Sunday";
+	if(getCookie("intro") != "" || getCookie("intro") != null){
 
-	}else if(getCookie("intro") == "Tatari"){
-		
-		if(getCookie("chp_Tatari") == "all"){
-			story = "Tatari/all";
+		var introStory = "";
 
-		}else if(getCookie("chp_Tatari") == "chp"){
-			story = "Tatari/chp1";
-
-		}else if(getCookie("chp_Tatari") == "chp1"){
-			story = "Tatari/chp1";
-
-		}else{
-
+		if(getCookie("intro") == "Sunday"){
+			introStory = "Sunday";
+	
+		}else if(getCookie("intro") == "Tatari"){
+			
+			if(getCookie("chp_Tatari") == "all"){
+				introStory = "Tatari/all";
+	
+			}else if(getCookie("chp_Tatari") == "chp"){
+				introStory = "Tatari/chp";
+	
+			}else if(getCookie("chp_Tatari") == "chp1"){
+				introStory = "Tatari/chp1";
+	
+			}else{
+	
+			}
+	
+		}else if(getCookie("intro") == "Star"){
+			introStory = "Star";
 		}
 
-	}else if(getCookie("intro") == "Star"){
-		story = "Star";
+		$(".img_main01").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/main01.png");
+		$(".img_main02").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/main02.png");
+		$(".img_main03").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/main03.png");
+		$(".img_main04").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/main04.png");
+		$(".img_main05").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/main05.png");
+	
+		$(".img_other01").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/other01.png");
+		$(".img_other02").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/other02.png");
+		$(".img_other03").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/other03.png");
+		$(".img_other04").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/other04.png");
+		$(".img_other05").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/other05.png");
 	}
 
-	$(".img_main01").attr("src","/img/StoryIntroImg/" + story + "/Charactor/main01.png");
-	$(".img_main02").attr("src","/img/StoryIntroImg/" + story + "/Charactor/main02.png");
-	$(".img_main03").attr("src","/img/StoryIntroImg/" + story + "/Charactor/main03.png");
-	$(".img_main04").attr("src","/img/StoryIntroImg/" + story + "/Charactor/main04.png");
-	$(".img_main05").attr("src","/img/StoryIntroImg/" + story + "/Charactor/main05.png");
 
-	$(".img_other01").attr("src","/img/StoryIntroImg/" + story + "/Charactor/other01.png");
-	$(".img_other02").attr("src","/img/StoryIntroImg/" + story + "/Charactor/other02.png");
-	$(".img_other03").attr("src","/img/StoryIntroImg/" + story + "/Charactor/other03.png");
-	$(".img_other04").attr("src","/img/StoryIntroImg/" + story + "/Charactor/other04.png");
-	$(".img_other05").attr("src","/img/StoryIntroImg/" + story + "/Charactor/other05.png");
+	if(getCookie("story") != "" || getCookie("story") != null){
+
+		var story = "";
+
+		if(getCookie("story") == "Sunday"){
+			story = "Sunday";
+	
+		}else if(getCookie("story") == "Tatari"){
+			
+			if(getCookie("chp_Tatari") == "chp"){
+				story = "Tatari/chp";
+	
+			}else if(getCookie("chp_Tatari") == "chp1"){
+				story = "Tatari/chp1";
+	
+			}else{
+	
+			}
+	
+		}else if(getCookie("intro") == "Star"){
+			story = "Star";
+		}
+
+		$(".img_intro").attr("src","/img/StoryImg/" + story + "/Intro/main.png");
+		$(".img_content01").attr("src","/img/StoryImg/" + story + "/Content/content01.png");
+		$(".img_content02").attr("src","/img/StoryImg/" + story + "/Content/content02.png");
+	}
+
+
+	
 
 })(jQuery);
 
