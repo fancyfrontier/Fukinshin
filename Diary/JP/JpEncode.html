@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/encode.css" />
+  <script type="text/javascript" src="../assets/js/Diary.js"></script>
+  <script type="text/javascript" src="../assets/js/encode.js"></script>
+
+  <title>Sの部屋</title>
+
+</head>
+
+<body>
+  <header>
+    <h1 class="logo" id="title">Sの部屋</h1>
+  </header>
+  
+  <!---------------------上欄位----------------------->
+  <nav id="navbar">
+    <ul>
+      <li class="nav-item" id="JP_Home">ホーム</li>
+      <li class="nav-item" id="JP_Index"><a href="JpIndex.html">???</a></li>
+      <li class="nav-item" id="JP_Profile" onclick="JP_ClickProfile()">プロフィール</a></li>
+      <li class="nav-item" id="JP_Message" onclick="JP_ClickMessage()">メッセージ</a></li>
+    </ul>
+    <div class="menu-bar">メニュー
+      <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+    </div>
+  </nav>
+
+  <br/>
+    <h1>エクストラ</h1>
+  <br>
+
+  <div class="container fluid">
+    <div class="row">
+      <div class="span5">
+        <textarea name="" id="decode" cols="20" rows="3" style="background-color:#cccccc; font-size:30px;"></textarea>
+      </div>
+
+      <div class="button">
+        <span class="button__mask"></span>
+        <span class="button__text">デコード</span>
+        <span class="button__text button__text--bis" onclick="baseDecode()">デコード</span>
+      </div>
+
+      <div class="span6">
+        <textarea name="" id="result" cols="20" rows="3" style="background-color:#cccccc; font-size:30px;"
+          disabled></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Heading -->
+  <div class="page-heading space">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          
+          <p>あなたがこの手紙を読んでいるということは…………隠し要素が見つかりました。</p>
+          <p>隠し要素はこの物語のシリーズに関するXXXX。</p>
+          <br/>
+          <p>以下解碼器的使用方式：</p>
+          <p>1. 輸入想要解碼的文字（有區分大小寫），點選解碼，就能編譯成原本的文字。</p>
+          <p>2. 若沒有反應，就代表有錯字導致無法解碼。</p>
+          <br/>
+          <p>之所以用這種形式做加解密，主要是證明遊戲內的亂碼是真的能夠解密的（真的），</p>
+          <p>如果真的想看彩蛋，但覺得打字太花時間或是容易錯字的玩家，</p>
+          <p>也可以透過官網來信聯絡，作者有另外整理一包對應的圖文檔案。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script>
+    $('.menu-bar').on('click', function () {
+      $('nav ul').toggleClass('reveal');
+    });
+
+    //offset() ：讀取指定元素在頁面(文件)上的相對坐標，
+    //回傳含有top及left屬性的物件                  
+    let navPosition = $("#navbar").offset().top;
+    console.log("navPosition" + navPosition);
+
+    $(window).scroll(function () {
+      let scrollTop = $(this).scrollTop();
+      console.log("scrollTop" + scrollTop);
+      if (scrollTop > navPosition)
+        $("#navbar").addClass("fixed_nav");
+      else
+        $("#navbar").removeClass("fixed_nav");
+    });
+  </script>
+</body>
+
+</html>

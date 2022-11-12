@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/DiaryStyle.css" />
+    <script type="text/javascript" src="../assets/js/Diary.js"></script>
+
+    <title>S的房間</title>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="logo sticky-top" id="title">Sの部屋</h1>
+    </header>
+    <!---------------------上欄位----------------------->
+    <nav id="navbar" class="sticky-top">
+        <ul>
+            <li class="nav-item" id="TC_Home">ホーム</a></li>
+            <li class="nav-item" id="TC_Index"><a href="TcIndex.html">???</a></li>
+            <li class="nav-item" id="TC_Profile" onclick="TC_ClickProfile()">プロフィール</a></li>
+            <li class="nav-item" id="TC_Message" onclick="TC_ClickMessage()">メッセージ</a></li>
+        </ul>
+        <div class="menu-bar">選單
+            <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+        </div>
+    </nav>
+
+    <div class="container font">
+
+        <div id="eyes" class="eyes" style="display:none">
+            <img src="../assets/images/eyes.jpg" />
+        </div>
+
+        <div class="section">
+            <div class="col span_2_of_3">
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post1">
+                    <h1 class="blog-title">不想開學</h1>
+                    <h2 class="date">發表於 28th Mar 2011</h2>
+                    <p>
+                        春假都待在老家，沒能碰上幾次面，
+                        就快要開學了，對這樣的我來說，
+                        或許唯一值得期待的……只有「能見到她」這件事而已。
+                        <br><br>
+                        像去年那樣的事情我已經受夠了。
+                        希望一切都能平安無事。
+                    </p>
+                    <p>
+                        附上準備回程的照片
+                    </p>
+                    <img src="../assets/images/title01.jpg">
+
+                </div>
+
+                <!----------------------------最新文章部分------------------------------->
+
+                <div class="blog-post" id="post2">
+                    <h1 class="blog-title">無題</h1>
+                    <h2 class="date">發表於 8th Apr 2011</h2>
+                    <p>
+                        從開學到現在已經過了兩天......。<br>
+                        或許不會再發生了？
+                        已經沒事了？
+                        希望就這樣平安無事的繼續下去。
+                    </p>
+                    <p>
+                        路上看到的貓咪
+                    </p>
+                    <img src="../assets/images/title02.jpg">
+
+                </div>
+
+                <!----------------------------最新文章部分------------------------------->
+
+                <div class="blog-post" id="post3">
+                    <h1 class="blog-title">無題</h1>
+                    <h2 class="date">發表於 16th Apr 2011</h2>
+                    <p>
+                        你也看得到嗎？<br>
+                    </p>
+                    <img src="../assets/images/title03.jpg">
+
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post4">
+                    <h1 class="blog-title">無力感</h1>
+                    <h2 class="date">發表於 29th Apr 2011</h2>
+                    <p>
+                        果然又開始了，
+                        為什麼要這樣？<br>
+                        比以前還過份，
+                        救救我、到底該怎麼辦？
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post5">
+                    <h1 class="blog-title">我不知道</h1>
+                    <h2 class="date">發表於 3th May 2011</h2>
+                    <p>
+                        班上開始了匿名問卷調查，
+                        除了我，還有多少人願意說出來呢？<br><br>
+
+                        從什麼時候開始變成這樣的……。
+                    </p>
+                    <img src="../assets/images/title04.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post6">
+                    <h1 class="blog-title">對不起</h1>
+                    <h2 class="date">發表於 5th May 2011</h2>
+                    <p>
+                        對不起對不起
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起<br>
+                        對不起對不起對不起對不起對不起
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post7">
+                    <h1 class="blog-title">無題</h1>
+                    <h2 class="date">發表於 8th May 2011</h2>
+                    <p>
+                        不想讓她擔心，<br>
+                        不想回去
+                    </p>
+                    <p>
+                        累了。
+                    </p>
+                    <img src="../assets/images/title05.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post8">
+                    <h1 class="blog-title">夠了</h1>
+                    <h2 class="date">發表於 26th May 2011</h2>
+                    <p>
+                        已經不行了<br>
+                        夠了<br>
+                    </p>
+                </div>
+
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post9">
+                    <h1 class="blog-title">不能就這樣結束</h1>
+                    <h2 class="date">發表於 29th May 2011</h2>
+                    <p>
+                        這不是真的吧…為什麼現在才讓我知道這些事？<br><br>
+
+                        誰可以幫幫我？<br>
+                    </p>
+                </div>
+
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post10">
+                    <h1 class="blog-title">無題</h1>
+                    <h2 class="date">發表於 10th Jun 2011</h2>
+                    <p>
+                        今天學校一團亂，<br>
+                        好像還上新聞了。
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post11">
+                    <h1 class="blog-title">就要最後了</h1>
+                    <h2 class="date">發表於 13th Jun 2011</h2>
+                    <p>
+                        越是這種時候我越是這麼想，
+                        <br />
+                        我就像是朵綻放了也不會結果的花
+                        <br />
+                        <br />
+                        <a href="#" id="Continue" onclick="setInterval(kill, 400)">(點我繼續...)</a>
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post12">
+                    <h1 class="blog-title">無題</h1>
+                    <h2 class="date">發表於 16th Jun 2011</h2>
+                    <p>
+                        真的能相信她嗎？
+                    </p>
+                    <p>
+                        <img src="../assets/images/title12.png">
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+
+
+                <!----------------------------最後文章上鎖------------------------------->
+                
+                <div class="blog-post" id="post13">
+                    <div id="TCinputBlock" class="showInputPwd">
+                        <h1 class="blog-title">？？？</h1>
+                        <form>
+                            <span>請輸入密碼：</span><input id="TCinputLastPwd">
+                            <input id="TCsendLastPwd" type="button" href="javascript:void(0)" value="確認"/>
+                        </form>
+                    </div>
+
+                    <div id="TCshowBlock" class="disableLast">
+                        <h1 class="blog-title">徒花</h1>
+
+                        <h2 class="date">發表於 20th Jun 2011</h2>
+                        <p>
+                            對不起，<br>
+                            最後的最後才幫上妳的忙。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------------------右側部分------------------------------->
+
+            <aside class="col span_1_of_3">
+                <div class="side-post" id="userPhoto">
+                    <img src="../assets/images/diaryPhoto.jpg" alt="img">
+                    <p class="side-content">自我介紹：無</p>
+                </div>
+
+                <!-- <div class="side-post">
+                    <p class="side-content">宮下由美子
+                        by 宮下由美子 (みやしたゆみこ)
+                        プロフィールを見る
+                        画像一覧
+                        更新通知を受け取る</p>
+                    <a href="#" class="button">Subscribe!</a>
+                </div> -->
+            </aside>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">確定要進入嗎？</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>接下來的頁面將會有作祟「序章」、「第一章」</p>
+              <h2 style="color: red;">大量的劇透</h2>
+              <p>建議遊玩過後再進入。</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" id="enter" class="btn btn-primary">進入</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        $('.menu-bar').on('click', function () {
+            $('nav ul').toggleClass('reveal');
+        });
+
+        //offset() ：讀取指定元素在頁面(文件)上的相對坐標，
+        //回傳含有top及left屬性的物件                  
+        let navPosition = $("#navbar").offset().top;
+        console.log("navPosition" + navPosition);
+
+        $(window).scroll(function () {
+            let scrollTop = $(this).scrollTop();
+            console.log("scrollTop" + scrollTop);
+            if (scrollTop > navPosition)
+                $("#navbar").addClass("fixed_nav");
+            else
+                $("#navbar").removeClass("fixed_nav");
+        });
+        
+    </script>
+</body>
+
+</html>

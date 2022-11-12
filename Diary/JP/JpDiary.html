@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/DiaryStyle.css" />
+    <script type="text/javascript" src="../assets/js/Diary.js"></script>
+    
+    <title>Sの部屋</title>
+
+    <script>
+
+        // function checkPwd(input) {
+        //     var checkPoint = btoa(input);
+        // }
+        
+        // function checkMsg(input){
+        //     var checkMsgPoint = btoa(input);
+        // }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo" id="title">Sの部屋</h1>
+    </header>
+    <!---------------------上欄位----------------------->
+    <nav id="navbar" class="sticky-top">
+        <ul>
+            <li class="nav-item" id="JP_Home"><a href="#">ホーム</a></li>
+            <li class="nav-item" id="JP_Index"><a href="JpIndex.html">???</a></li>
+            <li class="nav-item" id="JP_Profile" onclick="JP_ClickProfile()"><a href="#" id="profile">プロフィール</a></li>
+            <li class="nav-item" id="JP_Message" onclick="JP_ClickMessage()"><a href="#" id="message">メッセージ</a></li>
+        </ul>
+        <div class="menu-bar">メニュー
+            <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+        </div>
+    </nav>
+
+    <div class="container font">
+
+        <div id="eyes" class="eyes" style="display:none">
+            <img src="../assets/images/eyes.jpg" />
+        </div>
+
+        <div class="section">
+            <div class="col span_2_of_3">
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post1">
+                    <h1 class="blog-title">学校に行きたくない</h1>
+                    <h2 class="date"> 28th Mar 2011</h2>
+                    <p>
+                        もうすぐ新学期が始まっちゃいます。
+                        春休みはほとんど実家で過ごして、あまり会えませんでした。
+                        こんな私にとって、 
+                        唯一期待してることは……ただ「彼女」に会えることだけです。
+                        <br><br>
+                        去年みたいなことはもうんざりです。
+                        新学期を無事に迎えられることを願います。
+                    </p>
+                    <p>
+                        これから東京に帰ります。
+                    </p>
+                    <img src="../assets/images/title01.jpg">
+
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post2">
+                    <h1 class="blog-title">タイトルなし</h1>
+                    <h2 class="date"> 8th Apr 2011</h2>
+                    <p>
+                        始業式から二日も経ちました。<br>
+                        あんなことはもう起きなさそう...？もう大丈夫ですか？<br>
+                        この平和がこのまま続けてほしいです...
+                    </p>
+                    <p>
+                        帰り道の猫
+                    </p>
+                    <img src="../assets/images/title02.jpg">
+
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post3">
+                    <h1 class="blog-title">タイトルなし</h1>
+                    <h2 class="date"> 16th Apr 2011</h2>
+                    <p>
+                        あなたも見えてますか？<br>
+                    </p>
+                    <img src="../assets/images/title03.jpg">
+
+                </div>
+  
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post4">
+                    <h1 class="blog-title">無力感</h1>
+                    <h2 class="date"> 29th Apr 2011</h2>
+                    <p>
+                        やっぱりこうなった、
+                        どうして？<br>
+                        さらにひどくなった，
+                        一体どうすればいい？<br>
+                        誰かに助けてほしい
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post5">
+                    <h1 class="blog-title">知らない</h1>
+                    <h2 class="date"> 3th May 2011</h2>
+                    <p>
+                        「無記名アンケート調査」を行った，
+                        私以外、他の誰か本当のことを言ってくれますか？<br><br>
+
+                        いつからこうなった……。
+                    </p>
+                    <img src="../assets/images/title04.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post6">
+                    <h1 class="blog-title">ごめんなさい</h1>
+                    <h2 class="date"> 5th May 2011</h2>
+                    <p>
+                        ごめんなさいごめんなさい
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさい<br>
+                        ごめんなさいごめんなさいごめんなさいごめんなさいごめんなさい
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post7">
+                    <h1 class="blog-title">タイトルなし</h1>
+                    <h2 class="date"> 8th May 2011</h2>
+                    <p>
+                        彼女に心配かけたくない<br>
+                        帰りたくない
+                    </p>
+                    <p>
+                        もう疲れた
+                    </p>
+                    <img src="../assets/images/title05.jpg">
+                </div>
+
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post8">
+                    <h1 class="blog-title">もういい</h1>
+                    <h2 class="date"> 26th May 2011</h2>
+                    <p>
+                        もうダメだ<br>
+                        もういい<br>
+                    </p>
+                </div>
+
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post9">
+                    <h1 class="blog-title">このままじゃいけない</h1>
+                    <h2 class="date"> 29th May 2011</h2>
+                    <p>
+                        噓でしょう...なぜ今更こんな事を？<br><br>
+
+                        ねえ、誰か助けて…<br>
+                    </p>
+                </div>
+
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post10">
+                    <h1 class="blog-title">タイトルなし</h1>
+                    <h2 class="date"> 10th Jun 2011</h2>
+                    <p>
+                        今日、学校で大変な事故が起こった。<br>
+                        ニュースまでに放送されていた。
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post11">
+                    <h1 class="blog-title">もうすぐ終わる</h1>
+                    <h2 class="date"> 13th Jun 2011</h2>
+                    <p>
+                        こんな時だからこそ思う
+                        <br />
+                        私は咲いても実を結ばない花のよう
+                        <br />
+                        <br />
+                        <a href="#" id="Continue" onclick="setInterval(kill, 400)">(続く...)</a>
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <div class="blog-post" id="post12">
+                    <h1 class="blog-title">タイトルなし</h1>
+                    <h2 class="date"> 16th Jun 2011</h2>
+                    <p>
+                        彼女のこと信じていいの？
+                    </p>
+                    <p>
+                        <img src="../assets/images/title12.png">
+                    </p>
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+
+                <!----------------------------最後文章上鎖------------------------------->
+                
+                <div class="blog-post" id="post13">
+                    <div id="JPinputBlock" class="showInputPwd">
+                        <h1 class="blog-title">？？？</h1>
+                        <form>
+                            <span>パスワードを入力してください：</span><input id="JPinputLastPwd">
+                            <input id="JPsendLastPwd" type="button" href="javascript:void(0)" value="確認" />
+                        </form>
+                    </div>
+
+                    <div id="JPshowBlock" class="disableLast">
+                        <h1 class="blog-title">徒花</h1>
+
+                        <h2 class="date"> 20th Jun 2011</h2>
+                        <p>
+                            ごめんなさい、<br><br>
+                            遅れたが、お役に少しでも立てば嬉しいです。
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!----------------------------右側部分------------------------------->
+
+            <aside class="col span_1_of_3">
+                <div class="side-post" id="userPhoto">
+                    <img src="../assets/images/diaryPhoto.jpg" alt="img">
+                    <p class="side-content">自己紹介：なし</p>
+                </div>
+
+                <!-- <div class="side-post">
+                    <p class="side-content">宮下由美子
+                        by 宮下由美子 (みやしたゆみこ)
+                        プロフィールを見る
+                        画像一覧
+                        更新通知を受け取る</p>
+                    <a href="#" class="button">Subscribe!</a>
+                </div> -->
+            </aside>
+
+            <!----------------------------右側部分------------------------------->
+
+        </div>
+    </div>
+    <script>
+        $('.menu-bar').on('click', function () {
+            $('nav ul').toggleClass('reveal');
+        });
+
+        //offset() ：讀取指定元素在頁面(文件)上的相對坐標，
+        //回傳含有top及left屬性的物件                  
+        let navPosition = $("#navbar").offset().top;
+        console.log("navPosition" + navPosition);
+
+        $(window).scroll(function () {
+            let scrollTop = $(this).scrollTop();
+            console.log("scrollTop" + scrollTop);
+            if (scrollTop > navPosition)
+                $("#navbar").addClass("fixed_nav");
+            else
+                $("#navbar").removeClass("fixed_nav");
+        });
+    </script>
+</body>
+
+</html>

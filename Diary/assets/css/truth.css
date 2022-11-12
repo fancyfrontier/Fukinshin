@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+h5{
+    color: rgb(255, 255, 255);
+}
+
+p{
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    line-height:35px;
+}
+
+.bd-example {
+    margin: 20px;
+}
+
+#navbar-example {
+  position: fixed;
+  top: 25%;
+  width: 15em;
+  margin-top: -2.5em;
+}
+
+.nav_a{
+    color: rgb(255, 251, 251);
+    font-family: "微軟正黑體";
+    font-size: 20px;
+    background-color: black ;
+    background-image: url('../images/Blood2.png');
+    transition-duration: 0.8s;
+    opacity: 1;
+}
+
+.nav_a:hover{
+    color:rgb(187, 36, 10);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: black;
+    background-image: url('../images/Blood.png');
+    transition-duration: 0.8s;
+    opacity: 1;
+}
+
+.disableNotice{
+    display: none;
+}
+
+.showNotice{
+    display: block;
+}

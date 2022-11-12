@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/encode.css" />
+  <script type="text/javascript" src="../assets/js/Diary.js"></script>
+  <script type="text/javascript" src="../assets/js/encode.js"></script>
+
+  <title>S的房间</title>
+
+</head>
+
+<body>
+  <header>
+    <h1 class="logo" id="title">Sの部屋</h1>
+  </header>
+  
+  <!---------------------上欄位----------------------->
+  <nav id="navbar">
+    <ul>
+      <li class="nav-item" id="SC_Home">ホーム</li>
+      <li class="nav-item" id="SC_Index"><a href="ScIndex.html">???</a></li>
+      <li class="nav-item" id="SC_Profile" onclick="SC_ClickProfile()">プロフィール</a></li>
+      <li class="nav-item" id="SC_Message" onclick="SC_ClickMessage()">メッセージ</a></li>
+    </ul>
+    <div class="menu-bar">选单
+      <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+    </div>
+  </nav>
+
+  <br/>
+    <h1>Extra特设页面</h1>
+  <br>
+
+  <div class="container fluid">
+    <div class="row">
+      <div class="span5">
+        <textarea name="" id="decode" cols="20" rows="3" style="background-color:#cccccc; font-size:30px;"></textarea>
+      </div>
+
+      <div class="button">
+        <span class="button__mask"></span>
+        <span class="button__text">解密</span>
+        <span class="button__text button__text--bis" onclick="baseDecode()">解密</span>
+      </div>
+
+      <div class="span6">
+        <textarea name="" id="result" cols="20" rows="3" style="background-color:#cccccc; font-size:30px;"
+          disabled></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Heading -->
+  <div class="page-heading space">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <p>当您看到这个页面……就代表…代表您发现了游戏的彩蛋，</p>
+          <p>本彩蛋是对于该系列的世界观、故事的一些补充。</p>
+          <br/>
+          <p>以下译码器的使用方式：</p>
+          <p>1. 输入想要译码的文字（有区分大小写），点选解碼，就能编译成原本的文字。</p>
+          <p>2. 若没有反应，就代表有错字导致无法译码。</p>
+          <br/>
+          <p>之所以用这种形式做加解密，主要是证明游戏内的乱码是真的能够解密的（真的），</p>
+          <p>如果真的想看彩蛋，但觉得打字太花时间或是容易错字的玩家，</p>
+          <p>也可以透过官网来信联络，作者有另外整理一包对应的图文档案。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script>
+    $('.menu-bar').on('click', function () {
+      $('nav ul').toggleClass('reveal');
+    });
+
+    //offset() ：讀取指定元素在頁面(文件)上的相對坐標，
+    //回傳含有top及left屬性的物件                  
+    let navPosition = $("#navbar").offset().top;
+    console.log("navPosition" + navPosition);
+
+    $(window).scroll(function () {
+      let scrollTop = $(this).scrollTop();
+      console.log("scrollTop" + scrollTop);
+      if (scrollTop > navPosition)
+        $("#navbar").addClass("fixed_nav");
+      else
+        $("#navbar").removeClass("fixed_nav");
+    });
+  </script>
+</body>
+
+</html>

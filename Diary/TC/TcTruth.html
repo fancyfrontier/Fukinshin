@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/DiaryStyle.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/truth.css" />
+    <script type="text/javascript" src="../assets/js/Diary.js"></script>
+    <link rel="stylesheet" media="screen and  (max-width: 780px)" href="../assets/css/truthRWD.css" />
+
+    <title>S的房間</title>
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <h1 class="logo" id="title">Sの部屋</h1>
+    </header>
+    <!---------------------上欄位----------------------->
+    <nav id="navbar" class="sticky-top">
+        <ul>
+            <li class="nav-item" id="TC_Home">ホーム</a></li>
+            <li class="nav-item" id="TC_Index"><a href="TcIndex.html">???</a></li>
+            <li class="nav-item" id="TC_Profile" onclick="TC_ClickProfile()">プロフィール</a></li>
+            <li class="nav-item" id="TC_Message" onclick="TC_ClickMessage()">メッセージ</a></li>
+        </ul>
+        <div class="menu-bar">選單
+            <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+        </div>
+    </nav>
+
+    <div class="container font ">
+        
+        <div class="section">
+
+            <!-- <div>
+                <h2>本頁將會針對「作祟」的序章、第一章，做一個連貫的介紹補充。</h2>
+                <h2>左側的時間軸會根據所在的內容變更時間點，也可以點擊日期進行內容定位。</h2>
+            </div>
+            <div>
+                <br/>
+            </div> -->
+            <div class="col span_2_of_3" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" class="scrollspy-example-2">
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0527" style="height: 120px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">栖川的最後一日</h1>
+                    <h2 class="date">發表於 27th May 2011</h2>
+                    <p>
+                        這天是栖川到校的最後一天。<br>
+                        在回憶環節，進入浴室之前若先調查日曆，<br>
+                        可以得知當天正是5月27日。<br>
+                        <br>
+                        嚴格來說也是第一章展開整個故事的起點。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0527_1.jpg">
+                    <br>
+                    <p>
+                        進入浴室，淺居會目睹栖川死亡的真相。<br>
+                        並不是最初有些玩家猜測的「白崎動的手」，<br>
+                        而是栖川自己選擇結束生命。<br>
+                        <br>
+                        另外，雖然不太可能會注意到，<br>
+                        「菅野」、「白崎」、「栖川」三位的住處，<br>
+                        房間格局雖然都一樣，但都有數處不同。<br>
+                        在<b>6月17日</b>空間內的調查有暗示到這點。
+                    </p>
+                    <img src="../assets/images/Truth/0527_2.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0528" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">白崎的行動</h1>
+                    <h2 class="date">發表於 28th May 2011</h2>
+                    <p>
+                        從浴室出來後，白崎會緊隨淺居來到走廊。<br>
+                        此時發生的情節，就是B班班導「岸本」接到的請假聯絡。
+                    </p>
+                    <img src="../assets/images/Truth/0528_1.jpg">
+                    <br>
+                    <p>
+                        同一天，<br>
+                        白崎不只聯絡岸本，<br>
+                        為求保險不讓栖川的事情敗露，還交換了雙方的門牌。<br>
+                        同樣的，在回憶環節離開玄關之前調查也能得知日期為5月28日。
+                    </p>
+                    <img src="../assets/images/Truth/0528_2.jpg">
+                    <br>
+                    <p>
+                        至於玄關的那幾袋垃圾，是為了表達白崎搬入栖川家，<br>
+                        (那幾袋垃圾不是栖川啊喂!!!)<br>
+                        所以石川在調查栖川(實則白崎)的住處時，<br>
+                        才會感覺到這個地方似乎有一段時間沒人居住了。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0528_3.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="bonus1" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">隱藏要素 你發現了嗎？</h1>
+                    <h2 class="date">發表於 28th May 2011</h2>
+                    <p>
+                        結束白崎分屍的劇情後，<br>
+                        來到玄關原本要調查書房，卻被白崎拉出來。<br>
+                        此時物品欄的日記會變成最後的「白崎的日記」。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0528_4.jpg">
+                    <br>
+                    <p>
+                        隨著電鈴響起，有多少玩家還會記得回去探索房間呢？<br>
+                        此處的隱藏要素就是「S的房間」 > 「訊息」的密碼。<br>
+                        第一章所有的亂碼都能夠被解密。
+                    </p>
+                    <img src="../assets/images/Truth/0528_5.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0603" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">第一章 遊戲開始</h1>
+                    <h2 class="date">發表於 3th Jun 2011</h2>
+                    <p>
+                        時間線來到6月3日，也就是第一章的開頭。<br>
+                        登場的是有著數張立繪卻又活不過遊戲時間5分鐘的女角：「倉橋佐奈」。<br>
+                        (我Debug的時候她都活不過15秒，M表示抗議)<br>
+                        <br>
+                        此處她所收到的黑盒，雖然沒有明說，<br>
+                        但全破 or 知道劇情的各位，應該也已經知道正是出自櫻井之手。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0603_1.jpg">
+                    <br>
+                    <p>
+                        如果觸發倉橋家1F玄關左側的門，<br>
+                        往樓梯(客廳)方向移動的話，會聽到 敲~門~聲~<br>
+                        聲音我是調比較小聲，但仔細聽還是聽的到。<br>
+                        (算是個小細節，我也不敢指望有人會發現)
+                    </p>
+                    <img src="../assets/images/Truth/0603_2.jpg">
+                </div>
+
+                 <!----------------------------文章部分------------------------------->
+                 <div id="0610" style="height: 60px"></div>
+                 <div class="blog-post">
+                     <h1 class="blog-title">劇間</h1>
+                     <h2 class="date">發表於 10th Jun 2011</h2>
+                     <p>
+                         雖然礙於遊戲篇幅、節奏，並沒有將詳細內容演出，<br>
+                         設定上6月7日櫻井接觸白崎，並給了她黑盒。<br>
+                         6月10日則是發生了「A班集體死亡事件」<br>
+                     </p>
+                     <img src="../assets/images/Truth/0610_1.jpg">
+                 </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0611" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">石川偵探事務所</h1>
+                    <h2 class="date">發表於 11th Jun 2011</h2>
+                    <p>
+                        埋了一年多的女角，終於有機會操控她了(?<br>
+                        (不曉得有多少人被序章發佈時的雙人圖騙到)<br>
+                        「都玩到結局了，所以那個妹子呢？」<br>
+                        <br>
+                        真正的主角<span style="text-decoration:line-through">(暫時)</span>終於在第一章登場，<br>
+                        (Ｌ：<span style="color: black;">但之後會不會發生意外...導致換主角真的不好說)</span><br>
+                        PS：石川事務所的格局是依照「序章」的結尾去製作的，<br>
+                        　　  唯一不同之處是保險箱(在第一章結尾後，被石川收走了)
+                    </p>
+                    <img src="../assets/images/Truth/0611_1.jpg">
+                    <br>
+                    <p>
+                        設定上淺居從小時候就住在這間事務所，<br>
+                        至於詳細到底發生了什麼事......未來的劇情會為大家解釋。<br>
+                        (電腦一開始的密碼是設計成玩家可根據名片來回推)<br>
+                        (理想狀況是有玩家能記得序章的結尾...不過一年多了，抱歉。)<br>
+                        <br>
+                        石川調查鋼琴時口中的「那傢伙」，並不是指淺居。<br>
+                        如果能解開保險箱密碼觀看額外劇情，或許就能得到一些提示。
+                    </p>
+                    <img src="../assets/images/Truth/0611_2.jpg">
+                </div>
+
+               <!----------------------------文章部分------------------------------->
+               <div id="0612" style="height: 60px"></div>
+               <div class="blog-post">
+                   <h1 class="blog-title">醫院</h1>
+                   <h2 class="date">發表於 12th Jun 2011</h2>
+                   <p>
+                       一離開事務所，場景切換至醫院的時候，<br>
+                       如該附圖的對話，這個時間點其實「已經被困進去了」。<br>
+                       沒錯，醫院劇情一整段除了逃出的瞬間，<br>
+                       其實打從一開始就被困在空間裡面。<br>
+                       <br>
+                       雖然只是小小的細節，但開頭的演出結束後，<br>
+                       川上請石川到外面、有文件要請他過目，<br>
+                       經過開關門的音效，石川卻還留在停屍間。<br>
+                       (我相信太細節了...如果不是作者自己提出根本是藍色窗簾)
+                   </p>
+                   <img src="../assets/images/Truth/0612_1.jpg">
+                   <br>
+                   <p>
+                    而也是從這裡開始闡明，進出空間都會是同一塊地方。<br>
+                    同時補完方才提到，醫院環節打從一開始就在空間內的設定。<br>
+                </p>
+                <img src="../assets/images/Truth/0612_2.jpg">
+               </div>
+
+               <!----------------------------文章部分------------------------------->
+               <div id="0614" style="height: 60px"></div>
+               <div class="blog-post">
+                   <h1 class="blog-title">學校首日</h1>
+                   <h2 class="date">發表於 14th Jun 2011</h2>
+                   <p>
+                       不曉得會不會有人有疑問，醫院環節結束當晚，圖中的演出是什麼意思？<br>
+                       又是個較隱晦(對不起這真的是寫故事的習慣)的演出<br>
+                       這邊是想表達石川折返回到事務所(算是擔心)，<br>
+                       <br>
+                       而淺居其實原本有睡衣ver，<br>
+                       但是怎麼看怎麼怪，後來就刪除了。 
+                   </p>
+                   <img src="../assets/images/Truth/0614_1.jpg">
+                   <br>
+                   <p>
+                        這次特別為淺居準備了水手服ver.立繪<br>
+                        小小的提一下，<br>
+                        故事上來說其實「原本的設計」確實是序章順著時間線接第一章。<br>
+                        <br>
+                        <span style="color: black;">如果從孤島篇接回來也是能銜接校園篇</span><br>
+                        經過討論還是做個劇情的變動<br>
+                        反過來用第一章去銜接序章(個人也覺得這樣比較有趣)  
+                    </p>
+                    <img src="../assets/images/Truth/0614_2.jpg">
+                    <br>
+                    <p>
+                        沒有使用手機求救會增加什麼劇情呢？<br>
+                        這部分是：會影響淺居離開舊校舍時，畫面回捲看到的櫻井<br>
+                        或許會有玩家覺得：「就這樣？」<br>
+                        <br>
+                        不好意思真的是這樣(汗，<br>
+                        原因是：前期櫻井基本上是全白的，<br>
+                        但是她也算是在大主線會出現的角色(是的，未來還會再出現)、<br>
+                        包括第一章故事的結尾，<br>
+                        所以設計上會認為「知道櫻井有問題」算是個大的提示，<br>
+                        <span style="text-decoration:line-through">且在第一章最後的環節可以稍微誤導玩家</span>
+                    </p>
+                    <img src="../assets/images/Truth/0614_3.jpg">
+               </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0615" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">蜘蛛之會 事情發生的那天</h1>
+                    <h2 class="date">發表於 15th Jun 2011</h2>
+                    <p>
+                    沒錯，時間線來到6月15日。<br>
+                    當初序章被困在飯店不斷被提示的那一天：0615。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0615_1.jpg">
+                    <br>
+                    <p>
+                    至於序章的整理，就留在頁面尾段說明吧！<br>
+                    </p>
+                    <img src="../assets/images/Truth/0615_2.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0617" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">第二次調查、探訪菅野老師</h1>
+                    <h2 class="date">發表於 17th Jun 2011</h2>
+                    <p>
+                    雖然從A班集體死亡事件，劇情走向逐漸轉到栖川的欺凌事件。<br>
+                    但這天仍為了菅野老師持有的情報，而前去拜訪。<br>
+                    <br>
+                    從醫院開始就提過數次，如果被困入空間要使用手機發送簡訊，<br>
+                    再次困入公寓區域的空間時，發送訊息也成了劇情推進的觸發點。<br>
+                    當抵達4樓，並朝向菅野老師的住處前進時，<br>
+                    突如其來的追逐戰使淺居必須折返至梯間。<br>
+                    <br>
+                    雖然不影響結局，但此處其實有個分歧。<br>
+                    1. 從左側梯間的3樓回到2樓(進入空間的地點)<br>
+                    2. 繞一圈重新進入4樓並進入菅野老師的房間<br>
+                    (應該許多人都知道，恐怖遊戲追逐戰的技巧，快速進出)<br>
+                    (雖然要設定成卡住玩家，不讓玩家在怪物出來前折返也不是不行)<br>
+                    (但還是覺得沒必要增加無謂的難度，所以其實可以快速折返不用繞樓層)<br>
+                    </p>
+                    <img src="../assets/images/Truth/0617_1.jpg">
+                    <br>
+                    <p>
+                    進入菅野老師的住處後(?)，如果調查日曆會發現日期是5月27日。<br>
+                    此時進入浴室，該浴室的格局就是栖川家的浴室，<br>
+                    而且保留著5月27日發生的場景。(這個時間點應該不會有人注意到就是)<br>
+                    </p>
+                    <img src="../assets/images/Truth/0617_2.jpg">
+                    <p>
+                        而客廳的部分，格局仍是等等脫離空間後的菅野老師家客廳。<br>
+                        這邊滲了血下來，不曉得有多少玩家聯想到樓上有發生事情......呢？<br>
+                    </p>
+                    <img src="../assets/images/Truth/0617_3.jpg">
+                    <p>
+                        而房間的部分，格局正是白崎的房間。<br>
+                        雖然劇情是後面才會進去她的房間進行調查，<br>
+                        萬一 萬一 有人能發現作者會很開心(汗)。<br>
+                        先不說可能很多人都不會懷疑這種RpgMaker的遊戲會塞多少細節，<br>
+                        就算有認真看也很難發現吧哈哈哈。
+                    </p>
+                    <img src="../assets/images/Truth/0617_4.jpg">
+                    <p>
+                        本段最後要提的，是白崎與栖川的門牌問題。<br>
+                        細心調查的玩家肯定有發現：白崎和栖川都住在這棟公寓，<br>
+                        但是，在空間內、脫離空間後......樓上門牌的順序是相反的。<br>
+                        由於現實世界的門牌是被白崎動過手腳的，<br>
+                        空間內的門牌反而才是真實的位置。<br>
+                        順帶一提，淺居被拜託出去丟垃圾的時候可以上5樓確認。<br>
+                        而菅野老師家客廳從樓上滲血的部分...想必也不用多說了吧。
+                    </p>
+                    <img src="../assets/images/Truth/0617_5.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0620" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">第一章的尾聲</h1>
+                    <h2 class="date">發表於 20th Jun 2011</h2>
+                    <p>
+                    為了這個Bug演出，我特別先把遊戲弄壞看看Bug會長怎樣。<br>
+                    就結果來說非常成功。<br>
+                    <br>
+                    可能會有人認為搞這齣是在幹嘛？<br>
+                    不僅是為了銜接劇情的尾聲有個選擇發送簡訊的地方、<br>
+                    更是再次補足了對於進入空間的設定。<br>
+                    沒錯，就在遊戲壞掉玩家重啟的那刻，就進入空間了。<br>
+                    所以重啟後所有角色對話亂碼，意味著進入空間的時間點是上一輪，<br>
+                    且角色的亂碼......可以被解碼，也有一兩位有不同的對話。<br>
+                    <br>
+                    就交給玩家們去發掘吧。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0620_1.jpg">
+                    <br>
+                    <p>
+                    這邊當初有在斟酌，要讓白崎說什麼。<br>
+                    最後決定用模稜兩可的「不見了」<br>
+                    普通原本聚在一起分開了......一般的狀況我會用「走散了」。<br>
+                    這邊算是埋個懸念，白崎從頭到尾都沒有說謊，卻也很多沒講(壞女人)
+                    </p>
+                    <img src="../assets/images/Truth/0620_2.jpg">
+                    <br>
+                    <p>
+                    這個房間有玩過序章的玩家肯定有印象，就是野口公司樓下的「資料室B」<br>
+                    目前就我所知有一位玩家有發現：櫻井被找去視聽教室前，同事C的櫃子：</p><br>
+                    <h2 style="color: red;">「憑依」的內容原本是有文字的。</h2><br>
+                    <p>也就是序章的時間點，野口調查的「憑依」內容是被櫻井加工後的結果。<br>
+                    而骷髏上的紙條，在序章時原本是：同事C的骷髏。<br>
+                    第一章的亂碼......經過解密文字也會不同。<br>
+                    <span style="text-decoration:line-through">埋了一年多的伏筆能回收，很開心(雖然很難發現)</span>
+                    </p>
+                    <img src="../assets/images/Truth/0620_3.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="adabana" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">徒花</h1>
+                    <h2 class="date">發表於 20th Jun 2011</h2>
+                    <p>
+                        進入第一章的尾聲，<br>
+                        這邊就黑盒提一下作祟系列的設定吧。<br>
+                        <br>
+                        想必還有印象的玩家應該都會知道，<br>
+                        序章時同事Ｃ隱隱約約跟事件有所關聯，<br>
+                        早在第一章菅野的日記裡：在路上遇到了奇怪的女人。<br>
+                        這邊指的也是同事Ｃ。<br>
+                        <br>
+                        第一章的最後，演出是完整還原序章的結尾。<br>
+                        而未知的某處也.......<br>
+                    </p>
+                    <img src="../assets/images/Truth/0620_5.jpg"><br>
+                    <p>感謝M，畫技真的進步多多</p><br>
+                    <p>
+                        黑盒的設定其實早期就有雛形，<br>
+                        但是放到第一章才完整形象、提到，主要是在控制故事設定的已知量。<br>
+                        畢竟遊戲不能盡塞設定不講故事，為了把持遊戲節奏的平衡，<br>
+                        序章只描述了岡部的妻子(千鶴)遇到了誰，接受了什麼，導致作祟的發生。<br>
+                        <br>
+                        相信玩家在解手法、日期跟理解故事已經花費了大量的精神。<br>
+                        所以不是不講、沒有想好，而是一直在控制可以釋出的資訊量。<br>
+                        接下來的將會銜接「序章」、「第一章」的結尾，希望大家會喜歡。
+                    </p>
+                    <img src="../assets/images/Truth/0620_4.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0721" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">作祟 序章：蜘蛛之會</h1>
+                    <h2 class="date">發表於 21th Jul 2011</h2>
+                    <p>
+                        作祟系列的起點，<span style="text-decoration:line-through">說真的我一開始以為沒戲。</span><br>
+                        雖然之前提到資訊量的釋出、斟酌遊戲背景的設定......種種因素，<br>
+                        但其實還有一個很大的因素是：會不會根本沒人玩。<br>
+                        這問題真的不可控、常常就算作者自己覺得好，玩家也不一定買單，<br>
+                        而且就算是用RpgMaker那麼好開發的工具，還是 非 常 花 時 間 。<br>
+                        所以序章決定做成就算沒有解釋清楚就收尾，自己還能接受的設計。<br>
+                        <br>
+                        剛才也提過，6月15日是「那次讀書會」發生的日期，<br>
+                        遊戲開頭的影片是7月15日的對話內容，提到：事情已經過了一個月。<br>
+                        導師發現M(櫃台人員)失蹤，於是在7月17日委託了石川，<br>
+                        第一章的結尾，7/18日淺居去找櫻井攤牌，所以才有了那些對話。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0721_2.jpg"><br>
+                    <p>
+                        序章的故事除了手法跟時間有點小複雜外，主線還蠻明確的。<br>
+                        而當初雖然有為「萬一能出續作」埋了些伏筆，不過都比較隱晦。<br>
+                        稍微跟大家解釋一下吧。(這個頁面的存在意義)<br>
+                    </p>
+                    <img src="../assets/images/Truth/0721_1.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="0722" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">野口</h1>
+                    <h2 class="date">發表於 22th Jul 2011</h2>
+                    <p>
+                        7月21日，是序章的開始時間。<br>
+                        7月22日，如果玩家碰過「超級日曜日」，那一定會認出請野口交文件的田中。<br>
+                        <span style="text-decoration:line-through">(滿滿的夾帶私貨)</span><br>
+                        這個時間點，野口都沒有被困入空間內。<br>
+                        直到他繳交完文件，離開公司前上了個廁所出來後......<br>
+                        同樣的，早在序章時野口離開空間的契機也是在廁所被警衛為找到。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0722_1.jpg"><br>
+                    <p>
+                        而，野口第二次進入空間是什麼時候呢？<br>
+                        是找手機的時候？是回到家裡被偷襲的時候？<br>
+                    </p>
+                    <h2 style="color: red;">都不是，是一回到家的時候。</h2><br>
+                    <img src="../assets/images/Truth/0722_2.jpg">
+                    <p>
+                        取完手機回到家裡後，這邊有個較明顯的提示。<br>
+                        整個置物間都不見啦~~ <span style="text-decoration:line-through">我相信大家不會想那麼多就是了。</span><br>
+                        之後發生的事情玩家們都曉得了，接著為大家稍微做個總結吧。
+                    </p>
+                    <img src="../assets/images/Truth/0722_3.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="kumo" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">蜘蛛之會</h1>
+                    <h2 class="date">發表於 22th Jul 2011</h2>
+                    <p>
+                        在SNS認識的同好3人，模仿小說中的完全犯罪，<br>
+                        並因此踏入了無法回頭的結局。<br>
+                    </p>
+                    <img src="../assets/images/Truth/0722_4.jpg"><br>
+                    <p>
+                        步驟的部分，用條列式的方式應該比較好理解。<br>
+                        1. M 安排了 3 間同區塊的房間，角落的部分還有監視器的死角。<br>
+                        2. 當天「導師」先入住，並持有與 KAGA 同款行李箱，離開房間時卡住門扣。<br>
+                        3. KAGA 則是在導師入住前就住在隔壁的房間。<br>
+                        4. 導師離開後 KAGA 從窗台翻過去，躲在「導師」的房間。<br>
+                        5. 「岡部」自己走入「導師」的房間，被 KAGA 偷襲。<br>
+                        6. KAGA 完事後，躲入「導師」帶來的同款空行李箱內。<br>
+                        7. 導師回來後，鎖上窗戶，利用從 KAGA 的房卡將 KAGA 房內門旁的行李箱交換。
+                        (將行李箱的KAGA，跟KAGA房內有裝行李的行李廂交換)<br>
+                        <br>
+                        以上的步驟，大致就是發生的全貌。
+                    </p>
+                    <img src="../assets/images/Truth/0722_5.jpg">
+                </div>
+
+                <!----------------------------文章部分------------------------------->
+                <div id="fin" style="height: 60px"></div>
+                <div class="blog-post">
+                    <h1 class="blog-title">後日談</h1>
+                    <h2 class="date">發表於 10th Jul 2022</h2>
+                    <p>
+                        序章、第一章，雖然劇情順序是相反的，但也算是站上了作祟系列的起跑點。<br>
+                        感謝閱讀到此的玩家，<br>
+                        做遊戲不敢說是多厲害，但真的很花時間(尤其除了繪圖外姑且算是獨立製作)<br>
+                        <br>
+                        「就算是免費遊戲，玩家也不一定得買單」這是我的原則。<br>
+                        雖然免費，但爛還是爛，好還是好。<br>
+                        不應該是因為免費，所以做的馬馬虎虎也沒關係啦~！<br>
+                        也因為這樣，我蠻早就做好被罵糞Game的覺悟。
+                    </p>
+                    <p>
+                        謝謝大家給我們這個機會、動力繼續製作新的篇章。<br>
+                        未來每代重心都會各自放在不同的類別上，<br>
+                        會在未來的某代更加針對序章的「驚悚、恐怖」去製作。<br>
+                        至於下一代會偏向「推理、劇情」走向。<br>
+                        <br>
+                        如果喜歡我們的作品，希望多多少少能夠宣傳擴散，<br>
+                        越多的玩家遊玩，對我們來說是越大的鼓勵！<br>
+                        <br>
+                        謝謝大家.....<a href="#notice" id="noticeBtn">預告(請點選)</a>
+                    </p>
+                    <div id="notice" class="disableNotice">
+                        <h2 style="color: red;">「導師」會再度登場</h2><br>
+                        <h2 style="color: red;">事務所要沒了</h2><br>
+                        <h2 style="color: red;">會有主要角色退場</h2><br>
+                    </div>
+                    
+                </div>
+
+                <!----------------------------最後文章上鎖------------------------------->
+            </div>
+
+
+            
+
+            <!----------------------------右側部分------------------------------->
+
+            
+
+            <aside class="col span_1_of_3 rwdHide">
+                <!-- <div class="side-post" id="userPhoto">
+                    <img src="../assets/images/diaryPhoto.jpg" alt="img">
+                    <p class="side-content">自我介紹：無</p>
+                </div> -->
+                <div class="col-4" id="navbar-example">
+                    <nav id="navbar-example3" class="flex-column align-items-stretch ">
+                        <nav class="nav-pills flex-column">
+                            <a class="nav-link nav_a" href="#0527">2011年5月27日</a>
+                            <a class="nav-link nav_a" href="#0528">2011年5月28日</a>
+                            <a class="nav-link nav_a" href="#bonus1">隱藏要素</a>
+                            <a class="nav-link nav_a" href="#0603">2011年6月3日</a>
+                            <a class="nav-link nav_a" href="#0610">2011年6月10日</a>
+                            <a class="nav-link nav_a" href="#0611">2011年6月11日</a>
+                            <a class="nav-link nav_a" href="#0612">2011年6月12日</a>
+                            <a class="nav-link nav_a" href="#0614">2011年6月14日</a>
+                            <a class="nav-link nav_a" href="#0615">2011年6月15日</a>
+                            <a class="nav-link nav_a" href="#0617">2011年6月17日</a>
+                            <a class="nav-link nav_a" href="#0620">2011年6月20日</a>
+                            <a class="nav-link nav_a" href="#adabana">徒花</a>
+                            <a class="nav-link nav_a" href="#0721">2011年7月21日</a>
+                            <a class="nav-link nav_a" href="#0722">2011年7月22日</a>
+                            <a class="nav-link nav_a" href="#kumo">蜘蛛之會</a>
+                            <a class="nav-link nav_a" href="#fin">後日談</a>
+                        </nav>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $('.menu-bar').on('click', function () {
+            $('nav ul').toggleClass('reveal');
+        });
+
+        //offset() ：讀取指定元素在頁面(文件)上的相對坐標，
+        //回傳含有top及left屬性的物件                  
+        let navPosition = $("#navbar").offset().top;
+        console.log("navPosition" + navPosition);
+
+        $(window).scroll(function () {
+            let scrollTop = $(this).scrollTop();
+            console.log("scrollTop" + scrollTop);
+            if (scrollTop > navPosition)
+                $("#navbar").addClass("fixed_nav");
+            else
+                $("#navbar").removeClass("fixed_nav");
+        });
+
+        // 滾輪連動用
+        $('body').scrollspy({ target: '#navbar-example' })
+        $('[data-spy="scroll"]').each(function () {
+        var $spy = $(this).scrollspy('refresh')
+        })
+
+        $(function () {
+            $("#noticeBtn").click(function () {
+                $("#notice").removeClass("disableNotice");
+                $("#notice").addClass("showNotice");
+            });
+        });
+
+    </script>
+</body>
+
+</html>

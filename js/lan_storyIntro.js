@@ -4,6 +4,7 @@ $(window).on('load', function() {
 		$(".STORY_INTRO_top").load("../Section/StoryIntro/StoryIntro_Sunday/storyIntro_top.html");
 		$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Sunday/storyIntro_intro.html");
 		$(".STORY_INTRO_content_main").load("../Section/StoryIntro/StoryIntro_Sunday/storyIntro_content_main.html");
+		$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Sunday/storyIntro_content_other.html");
 
 	}else if(getCookie("intro") == "Tatari"){
 		$(".STORY_INTRO_top").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_top.html");
