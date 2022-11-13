@@ -50,6 +50,14 @@ $(window).on('load', function() {
 	$(".img_team03").attr("src","/img/CommonImg/team03.jpg");
 
 	/*------------------
+		Story List Image
+	--------------------*/
+	$(".img_story_list01").attr("src","/img/StoryListImg/1.jpg");
+	$(".img_story_list02").attr("src","/img/StoryListImg/2.jpg");
+	$(".img_story_list03").attr("src","/img/StoryListImg/3.jpg");
+	$(".img_story_list04").attr("src","/img/StoryListImg/4.jpg");
+
+	/*------------------
 		Navigation
 	--------------------*/
 	$('.primary-menu').slicknav({
