@@ -16,7 +16,7 @@ $(window).on('load', function() {
 
 (function($) {
 	
-
+	
 	if(getCookie("intro") != "" || getCookie("intro") != null){
 
 		var introStory = "";
@@ -42,6 +42,8 @@ $(window).on('load', function() {
 		}else if(getCookie("intro") == "Star"){
 			introStory = "Star";
 		}
+
+		$(".img_intro").attr("src","/img/StoryIntroImg/" + introStory + "/Intro/intro.jpg");
 
 		$(".img_main01").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/main01.png");
 		$(".img_main02").attr("src","/img/StoryIntroImg/" + introStory + "/Charactor/main02.png");
@@ -80,7 +82,7 @@ $(window).on('load', function() {
 			story = "Star";
 		}
 
-		$(".img_intro").attr("src","/img/StoryImg/" + story + "/Intro/intro.jpg");
+		$(".img_story_intro").attr("src","/img/StoryImg/" + story + "/Intro/intro.jpg");
 		$(".img_content01").attr("src","/img/StoryImg/" + story + "/Content/content01.jpg");
 		$(".img_content02").attr("src","/img/StoryImg/" + story + "/Content/content02.jpg");
 	}
