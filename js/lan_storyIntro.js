@@ -30,7 +30,7 @@ $(window).on('load', function() {
 		$(".STORY_INTRO_top").load("../Section/StoryIntro/StoryIntro_Star/storyIntro_top.html");
 		$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Star/storyIntro_intro.html");
 		$(".STORY_INTRO_content_main").load("../Section/StoryIntro/StoryIntro_Star/storyIntro_content_main.html");
-		$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_other.html");
+		$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Star/storyIntro_content_other.html");
 	}
 
 	
@@ -53,7 +53,7 @@ $(window).on('load', function() {
 	$("#storyIntro_contentMainTextSC").hide();
 	$("#storyIntro_contentOtherTextFC").hide();
 	$("#storyIntro_contentOtherTextSC").hide();
-
+	
 	if(getCookie("lan") == "fc"){
 		$("#featureTextFC").show();
 		$("#storyIntro_topTextFC").show();
