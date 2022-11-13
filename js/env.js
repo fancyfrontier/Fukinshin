@@ -76,13 +76,13 @@ $(window).on('load', function() {
 	
 			}
 	
-		}else if(getCookie("intro") == "Star"){
+		}else if(getCookie("story") == "Star"){
 			story = "Star";
 		}
 
-		$(".img_intro").attr("src","/img/StoryImg/" + story + "/Intro/main.png");
-		$(".img_content01").attr("src","/img/StoryImg/" + story + "/Content/content01.png");
-		$(".img_content02").attr("src","/img/StoryImg/" + story + "/Content/content02.png");
+		$(".img_intro").attr("src","/img/StoryImg/" + story + "/Intro/intro.jpg");
+		$(".img_content01").attr("src","/img/StoryImg/" + story + "/Content/content01.jpg");
+		$(".img_content02").attr("src","/img/StoryImg/" + story + "/Content/content02.jpg");
 	}
 
 
