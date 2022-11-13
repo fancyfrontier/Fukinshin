@@ -42,6 +42,11 @@ $(window).on('load', function() {
 
 (function($) {
 	/*------------------
+		Header Image
+	--------------------*/
+	$(".img_bar").attr("data-setbg","/img/CommonImg/commonBar.jpg");
+
+	/*------------------
 		Navigation
 	--------------------*/
 	$('.primary-menu').slicknav({
