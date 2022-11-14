@@ -203,6 +203,25 @@ $(window).on('load', function() {
 	/*------------------
 		OutSite Set
 	--------------------*/
+	$('.news_1').click(function(){
+		resetCookie()
+		setCookie("news", "1", 3);
+		window.location.href = "../../Main/news.html";
+	});
+	$('.news_2').click(function(){
+		resetCookie()
+		setCookie("news", "2", 3);
+		window.location.href = "../../Main/news.html";
+	});
+	$('.news_3').click(function(){
+		resetCookie()
+		setCookie("news", "3", 3);
+		window.location.href = "../../Main/news.html";
+	});
+
+	/*------------------
+		OutSite Set
+	--------------------*/
 	$('.facebook').click(function(){
 		window.open("https://www.facebook.com/profile.php?id=100063828969552")
 	});
