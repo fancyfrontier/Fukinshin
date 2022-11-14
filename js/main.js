@@ -240,7 +240,7 @@ $(window).on('load', function() {
 	});
 
 	/*------------------
-		Download Set
+		Download, Other Set
 	--------------------*/
 	$('.download_Star').click(function(){
 		window.open("https://drive.google.com/file/d/1eBlh4JZTDW3OtYJlbOZsVmHdXjb_isrc/view?usp=share_link")
@@ -255,7 +255,9 @@ $(window).on('load', function() {
 		window.open("https://drive.google.com/file/d/1YbvYN2zynN8IC7X5KGuTUEM6CwNEJEn_/view?usp=share_link")
 	});
 
-	
+	$('.other_StarEvent').click(function(){
+		window.open("https://forms.gle/7jrHhRtejJnM4ZFV9")
+	});
 
 })(jQuery);
 

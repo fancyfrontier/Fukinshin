@@ -10,8 +10,8 @@ $(window).on('load', function() {
 		newsTmp = 3
 	}
 
-	$(".NEWS_top").load("../Section/NEWS/" + newsTmp + "news_top.html");
-	$(".NEWS_content").load("../Section/NEWS/" + newsTmp + "news_content.html");
+	$(".NEWS_top").load("../Section/News/news_top.html");
+	$(".NEWS_content").load("../Section/News/" + newsTmp + "/news_content.html");
 });
 
 (function($) {
