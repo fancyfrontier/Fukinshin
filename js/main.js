@@ -185,6 +185,17 @@ $(window).on('load', function() {
 		window.location.href = "../../Main/story.html";
 	});
 
+	/*----------------------
+		Main Home Intro Set
+	------------------------*/
+	$('.move_indexNews_TC').click(function(){
+		$("html,body").animate({scrollTop:$(".news_pos_TC").offset().top},200);
+	});
+	$('.move_indexNews_SC').click(function(){
+		$("html,body").animate({scrollTop:$(".news_pos_SC").offset().top},200);
+	});
+
+
 	/*------------------
 		Intro Set
 	--------------------*/
@@ -209,7 +220,7 @@ $(window).on('load', function() {
 	});
 
 	/*------------------
-		OutSite Set
+		News Set
 	--------------------*/
 	$('.news_1').click(function(){
 		resetCookie()
