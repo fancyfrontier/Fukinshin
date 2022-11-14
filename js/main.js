@@ -258,6 +258,12 @@ $(window).on('load', function() {
 	$('.other_StarEvent').click(function(){
 		window.open("https://forms.gle/7jrHhRtejJnM4ZFV9")
 	});
+	$('.other_TatariChp1_Freem').click(function(){
+		window.open("https://www.freem.ne.jp/win/game/28993")
+	});
+	$('.other_TatariChp1_Yume').click(function(){
+		window.open("https://freegame-mugen.jp/roleplaying/game_10514.html")
+	});
 
 })(jQuery);
 
