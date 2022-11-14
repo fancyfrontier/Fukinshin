@@ -640,7 +640,7 @@ ol {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-style: italic;
-	color: rgb(92, 92, 92);
+	color: rgb(211, 211, 211);
 }
 
 .text-box .read-more img {
@@ -726,6 +726,7 @@ ol {
 }
 
 .blog-item .text-box p {
+	color: white;
 	margin-bottom: 42px;
 }
 

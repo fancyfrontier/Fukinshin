@@ -58,6 +58,14 @@ $(window).on('load', function() {
 	$(".img_story_list04").attr("src","/img/StoryListImg/4.jpg");
 
 	/*------------------
+		News Image
+	--------------------*/
+	$(".img_news01").attr("src","../../img/newsImg/1.jpg");
+	$(".img_news02").attr("src","../../img/newsImg/2.jpg");
+	$(".img_news03").attr("src","../../img/newsImg/3.jpg");
+
+
+	/*------------------
 		Navigation
 	--------------------*/
 	$('.primary-menu').slicknav({
