@@ -125,16 +125,10 @@ function TC_ClickMessage() {
 }
 
 function SC_ClickProfile() {
-    var pwd = prompt("这个功能被上锁了");
-    checkPwdInput = pwd;
-    if (checkPwd(checkPwdInput) == true) {
-        alert("密码错误，请重新输入");
-    }
-    else if (checkPwdInput == null) {
-    }
-    else {
-        alert("密码错误，请重新输入");
-    }
+    $('#myModal').modal('show');
+    $("#enter").on({
+        click: function () { $(window).attr('location', 'ScTruth.html'); }
+    });
 }
 
 function SC_ClickMessage(){

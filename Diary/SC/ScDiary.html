@@ -269,6 +269,30 @@
 
         </div>
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">确定要进入吗？ </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>接下来的页面将会有作祟「序章」、「第一章」</p>
+                <h2 style="color: red;">大量的剧透</h2>
+                <p>建议游玩过后再进入。 </p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                  <button type="button" id="enter" class="btn btn-primary">进入</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     <script>
         $('.menu-bar').on('click', function () {
             $('nav ul').toggleClass('reveal');
