@@ -51,6 +51,15 @@ $(window).on('load', function() {
 	$(".img_team03").attr("src","/img/CommonImg/team03.jpg");
 
 	/*------------------
+		Main Image
+	--------------------*/
+	$(".mainImg").attr("data-setbg","/img/CommonImg/main.gif");
+	$(".featureImg").attr("data-setbg","/img/CommonImg/featureImg.jpg");
+	$(".doubleArrow").attr("src","/img/CommonImg/doubleArrow.png");
+	$(".VideoArrow").attr("src","/img/CommonImg/videoArrow.png");
+	$(".videoImg").attr("data-setbg","/img/CommonImg/videoImg.jpg");
+	
+	/*------------------
 		Story List Image
 	--------------------*/
 	$(".img_story_list01").attr("src","/img/StoryListImg/1.jpg");
