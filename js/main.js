@@ -44,6 +44,7 @@ $(window).on('load', function() {
 	/*------------------
 		Header Image
 	--------------------*/
+	$(".img_logo").attr("src","/img/CommonImg/logo.png");
 	$(".img_bar").attr("data-setbg","/img/CommonImg/commonBar.jpg");
 	$(".img_team01").attr("src","/img/CommonImg/team01.jpg");
 	$(".img_team02").attr("src","/img/CommonImg/team02.jpg");
@@ -195,7 +196,6 @@ $(window).on('load', function() {
 		$("html,body").animate({scrollTop:$(".news_pos_SC").offset().top},200);
 	});
 
-
 	/*------------------
 		Intro Set
 	--------------------*/
@@ -251,6 +251,9 @@ $(window).on('load', function() {
 	/*------------------
 		Back Set
 	--------------------*/
+	$('.img_logo').click(function(){
+		window.location.href = "../../Main/index.html";
+	});
 	$('.toStoryIntroList').click(function(){
 		window.location.href = "../../Main/storyIntroList.html";
 	});

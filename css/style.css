@@ -1099,7 +1099,7 @@ ol {
 }
 
 .footer-menu {
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 .footer-menu li:last-child a {
@@ -1238,7 +1238,7 @@ ol {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-style: italic;
-	color: #b01ba5;
+	color: #c8a5c6;
 }
 
 .game-item .read-more img {
