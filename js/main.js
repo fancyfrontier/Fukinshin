@@ -99,7 +99,7 @@ $(window).on('load', function() {
 		loop: true,
 		nav: true,
 		dots: true,
-		navText: ['', '<img src="../img/icons/solid-right-arrow.png">'],
+		// navText: ['', '<img src="../img/icons/solid-right-arrow.png">'],
 		mouseDrag: false,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
