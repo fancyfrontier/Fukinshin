@@ -48,7 +48,7 @@ $(window).on('load', function() {
 	$(".img_bar").attr("data-setbg","/img/CommonImg/commonBar.jpg");
 	$(".img_team01").attr("src","/img/CommonImg/team01.jpg");
 	$(".img_team02").attr("src","/img/CommonImg/team02.jpg");
-	$(".img_team03").attr("src","/img/CommonImg/team03.jpg");
+	$(".img_team03").attr("src","/img/CommonImg/team03.png");
 
 	/*------------------
 		Main Image
