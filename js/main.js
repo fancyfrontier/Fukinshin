@@ -283,7 +283,7 @@ $(window).on('load', function() {
 		window.open("https://drive.google.com/file/d/1YemdcoUKjrR3xsw-WlaEf6f7w04Rip1Q/view?usp=share_link")
 	});
 	$('.download_Tatari_Chp1').click(function(){
-		window.open("https://drive.google.com/file/d/1YbvYN2zynN8IC7X5KGuTUEM6CwNEJEn_/view?usp=share_link")
+		window.open("https://drive.google.com/file/d/1UlyPehsUfMu02wviVzsFINIdvlqsyTQC/view?usp=sharing")
 	});
 
 	$('.other_StarEvent').click(function(){
