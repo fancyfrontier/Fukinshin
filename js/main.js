@@ -66,6 +66,7 @@ $(window).on('load', function() {
 	$(".img_story_list02").attr("src","/img/StoryListImg/2.jpg");
 	$(".img_story_list03").attr("src","/img/StoryListImg/3.jpg");
 	$(".img_story_list04").attr("src","/img/StoryListImg/4.jpg");
+	$(".img_story_list05").attr("src","/img/StoryListImg/5.jpg");
 
 	/*------------------
 		News Image
@@ -186,6 +187,14 @@ $(window).on('load', function() {
 		clearCookie("chp_Tatari");
 		setCookie("story", "Tatari", 3);
 		setCookie("chp_Tatari", "chp1", 3);
+		window.location.href = "../../Main/story.html";
+	});
+
+	$('.story_Tatari_Chp2').click(function(){
+		resetCookie()
+		clearCookie("chp_Tatari");
+		setCookie("story", "Tatari", 3);
+		setCookie("chp_Tatari", "chp2", 3);
 		window.location.href = "../../Main/story.html";
 	});
 

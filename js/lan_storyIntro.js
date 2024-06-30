@@ -22,6 +22,10 @@ $(window).on('load', function() {
 			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_chp1.html");
 			$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_chp1.html");
 
+		}else if(getCookie("chp_Tatari") == "chp2"){
+			$(".STORY_INTRO_intro").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_intro_chp2.html");
+			$(".STORY_INTRO_content_other").load("../Section/StoryIntro/StoryIntro_Tatari/storyIntro_content_chp2.html");
+
 		}else{
 
 		}
@@ -99,6 +103,12 @@ $(window).on('load', function() {
 	$('.chp_Tatari_Chp1').click(function(){
 		clearCookie("chp_Tatari");
 		setCookie("chp_Tatari", "chp1", 3)
+		location.reload();
+	});
+
+	$('.chp_Tatari_Chp2').click(function(){
+		clearCookie("chp_Tatari");
+		setCookie("chp_Tatari", "chp2", 3)
 		location.reload();
 	});
 
