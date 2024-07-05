@@ -294,6 +294,9 @@ $(window).on('load', function() {
 	$('.download_Tatari_Chp1').click(function(){
 		window.open("https://drive.google.com/file/d/1UlyPehsUfMu02wviVzsFINIdvlqsyTQC/view?usp=sharing")
 	});
+	$('.download_Tatari_Chp2').click(function(){
+		window.open("https://drive.google.com/file/d/1am_L5eJ31aHIWgTwkOdpINB74ineqVVw/view")
+	});
 
 	$('.other_StarEvent').click(function(){
 		window.open("https://forms.gle/7jrHhRtejJnM4ZFV9")
