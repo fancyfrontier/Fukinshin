@@ -283,7 +283,7 @@ $(window).on('load', function() {
 		Download, Other Set
 	--------------------*/
 	$('.download_Star').click(function(){
-		window.open("https://drive.google.com/file/d/1eBlh4JZTDW3OtYJlbOZsVmHdXjb_isrc/view?usp=share_link")
+		window.open("https://drive.google.com/file/d/1yP8su7v7wU8Oy5JCD-fNzzSIa24r_QfG/view")
 	});
 	$('.download_Sunday').click(function(){
 		window.open("https://drive.google.com/file/d/1XpX6dK7WC_YVQFm5QR6zU39IuVHREaBF/view")
